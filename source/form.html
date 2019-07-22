@@ -21,53 +21,69 @@
       </section>
       <p class="main-text">Мы будем рады воплотить в жизнь ваши пожелания! 
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <ul class="order-form">
-        <li class="order-form__item type-item">
-          <h2 class="type-item__item-head">ТИП</h2>
-          <input type="radio" class="type-item__item-radio visually-hidden" id="item" name="interier" value="0" checked>
-          <label for="item" class="type-item__type-label">Аксессуар для интерьера</label>
-          <input type="radio" class="type-item__item-radio visually-hidden" id="item" name="toy" value="1">
-          <label for="item" class="type-item__type-label">Детская игрушка</label>
-        </li>
-        <li class="order-form__item color-item">
-          <h2 class="color-item__item-head">ЦВЕТ</h2>
-          <input type="checkbox" id="white" class="color-item__color visually-hidden" checked>
-          <label for="white" class="color-item__color-label">Белый</label>
-          <input type="checkbox" id="grey" class="color-item__color visually-hidden" checked>
-          <label for="grey" class="color-item__color-label">Серый</label>
-          <input type="checkbox" id="Tiff" class="color-item__color visually-hidden">
-          <label for="Tiff" class="color-item__color-label">«Тиффани»</label>
-          <input type="checkbox" id="black" class="color-itemm__color visually-hidden">
-          <label for="black" class="color-item__color-label">Черный</label>
-          <input type="checkbox" id="rose" class="color-item__color visually-hidden">
-          <label for="rose" class="color-item__color-label">Розовый</label>
-          <input type="checkbox" id="orange" class="color-item__color visually-hidden">
-          <label for="orange" class="color-item__color-label">Оранжевый</label>
-        </li>
-        <li class="order-form__item naming">
-          <h2 class="naming__item-head">ФИО</h2>
-          <span class="naming__first-name">Имя:</span>
-          <input type="text" placeholder="Введите ваше имя*">
-          <span class="naming__last-name">Фамилия:</span>
-          <input type="text" placeholder="Укажите фамилию*">
-          <span class="naming__middle-name">Отчество:</span>
-          <input type="text" placeholder="Отчество, если желаете">
-        </li>
-        <li class="order-form__item phone">
-          <h2 class="phone__item-head">ТЕЛ</h2>
-          <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="phone__number handset">
-        </li>
-        <li class="order-form__item poste">
-          <h2 class="poste__item-head">E-mail</h2>
-          <input type="email" placeholder="Ваш Email*" class="poste__electro envelope">
-        </li>
-        <li class="order-form__item add-inf">
-          <h2 class="add-inf__item-head">Доп</h2>
-          <input type="text" placeholder="Опишите все ваши пожелания к заказу" class="add-inf__text-box">
-        </li>
-      </ul>
-      <p class="allert">*Поля обязательны для заполнения</p>
-      <input type="submit" class="button" value="ОТПРАВИТЬ ЗАКАЗ">
+      <form class="order">
+        <ul class="order-form">
+          <li class="order-form__item type-item">
+            <h2 class="order-form__item-head">ТИП</h2>
+            <div class="type-item">
+              <input type="radio" class="type-item__item-radio visually-hidden" id="inter-accessory" name="interier" value="0" checked>
+              <label for="item" class="type-item__type-label">Аксессуар для интерьера</label>
+              <input type="radio" class="type-item__item-radio visually-hidden" id="children-toys" name="toy" value="1">
+              <label for="item" class="type-item__type-label">Детская игрушка</label>
+            </div>
+          </li>
+          <li class="order-form__item">
+            <h2 class="order-form__item-head">ЦВЕТ</h2>
+            <div class="color-item">
+              <input type="checkbox" id="white" class="color-item__color visually-hidden" checked>
+              <label for="white" class="color-item__color-label">Белый</label>
+              <input type="checkbox" id="grey" class="color-item__color visually-hidden" checked>
+              <label for="grey" class="color-item__color-label">Серый</label>
+              <input type="checkbox" id="tiff" class="color-item__color visually-hidden">
+              <label for="Tiff" class="color-item__color-label">«Тиффани»</label>
+              <input type="checkbox" id="black" class="color-itemm__color visually-hidden">
+              <label for="black" class="color-item__color-label">Черный</label>
+              <input type="checkbox" id="rose" class="color-item__color visually-hidden">
+              <label for="rose" class="color-item__color-label">Розовый</label>
+              <input type="checkbox" id="orange" class="color-item__color visually-hidden">
+              <label for="orange" class="color-item__color-label">Оранжевый</label>
+            </div>
+          </li>
+          <li class="order-form__item">
+            <h2 class="naming__item-head">ФИО</h2>
+            <div class="naming">
+              <label class="naming__first-name">Имя:</label>
+              <input type="text" placeholder="Введите ваше имя*">
+              <label class="naming__last-name">Фамилия:</label>
+              <input type="text" placeholder="Укажите фамилию*">
+              <label class="naming__middle-name">Отчество:</label>
+              <input type="text" placeholder="Отчество, если желаете">
+            </div>
+          </li>
+          <li class="order-form__item">            
+            <h2 class="order-form__item-head">ТЕЛ</h2>
+            <div class="phone">
+              <label class="phone__text visually-hidden">Phone number</label>
+              <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="phone__number handset">
+            </div>
+          </li>
+          <li class="order-form__item">
+            <h2 class="order-form__item-head">E-mail</h2>
+            <div class="poste"></div>
+              <label class="poste__text visually-hidden">E-mail</label>
+              <input type="email" placeholder="Ваш Email*" class="poste__electro envelope">
+          </li>
+          <li class="order-form__item">
+            <h2 class="order-form__item-head">Доп</h2>
+            <div class="add-inf">
+              <label class="add-inf__text visually-hidden">Additional info</label>
+              <input type="text" placeholder="Опишите все ваши пожелания к заказу" class="add-inf__text-box">
+            </div>
+          </li>
+        </ul>
+        <p class="allert">*Поля обязательны для заполнения</p>
+        <input type="submit" class="button" value="ОТПРАВИТЬ ЗАКАЗ">
+      </form>
     </main>
     <footer class="page-footer">
       <ul class="social-nets">
