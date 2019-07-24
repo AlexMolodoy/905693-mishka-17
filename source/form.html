@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -22,7 +23,7 @@
       <p class="main-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order">
         <ul class="order-form">
-          <li class="order-form__item type-item">
+          <li class="order-form__item">
             <h2 class="order-form__item-head">ТИП</h2>
             <div class="type-item">
               <input type="radio" class="type-item__item-radio visually-hidden" id="inter-accessory" name="interier" value="0" checked>
@@ -40,7 +41,7 @@
               <label for="grey" class="color-item__color-label">Серый</label>
               <input type="checkbox" id="tiff" class="color-item__color visually-hidden">
               <label for="Tiff" class="color-item__color-label">«Тиффани»</label>
-              <input type="checkbox" id="black" class="color-itemm__color visually-hidden">
+              <input type="checkbox" id="black" class="color-item__color visually-hidden">
               <label for="black" class="color-item__color-label">Черный</label>
               <input type="checkbox" id="rose" class="color-item__color visually-hidden">
               <label for="rose" class="color-item__color-label">Розовый</label>
@@ -49,7 +50,7 @@
             </div>
           </li>
           <li class="order-form__item">
-            <h2 class="naming__item-head">ФИО</h2>
+            <h2 class="order__item-head">ФИО</h2>
             <div class="naming">
               <label class="naming__first-name">Имя:</label>
               <input type="text" placeholder="Введите ваше имя*">
