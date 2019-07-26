@@ -1,24 +1,27 @@
-.cat-list{
+.cat-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.cat-list__item{
+.cat-list__item {
   // width: 320px;
   height: calc(103px - 30px * 2);
   padding: 30px 185px 30px 29px;
 }
-.cat-list__item:nth-child(1){
+
+.cat-list__item:nth-child(1) {
   background-color: #63d1bb;
 }
-.cat-list__item:nth-child(2){
+
+.cat-list__item:nth-child(2) {
   background-color: #56c3b2;
 }
-.cat-list__item-text{
+
+.cat-list__item-text {
   width: 106px;
   height: 43px;
-  font-family: 'OpenSans', Arial, sans-serif;;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: bold;
   font-style: normal;
@@ -29,18 +32,19 @@
   color: white;
   text-decoration: none;
 }
-.cat-list__item-text:nth-child(1)::after{
+
+.cat-list__item-text:nth-child(1)::after {
   // content: '';
-  background-image: url(../img/icon-interior.svg);
+  background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 62px;
   object-fit: contain;
-
 }
-.cat-list__item-text:nth-child(2)::after{
-  content: '';
-  background-image: url(../../img/icon-toy.svg);
+
+.cat-list__item-text:nth-child(2)::after {
+  content: "";
+  background-image: url("../../img/icon-toy.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
