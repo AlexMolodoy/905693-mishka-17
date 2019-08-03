@@ -1,8 +1,17 @@
 .tech-proc {
-  color: black;
+  border: solid 1px #ececec;
+  width: 258px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 58px;
 }
 
 .tech-proc__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 33px;
+  width: 192px;
+  height: 52px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -15,6 +24,10 @@
 }
 
 .tech-proc__head {
+  width: 126px;
+  height: 41px;
+  margin-top: 29px;
+  margin-left: 91px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -27,6 +40,11 @@
 }
 
 .tech-proc__text {
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 34px;
+  padding-bottom: 29px;
+  margin: 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -39,6 +57,16 @@
 }
 
 .camera {
+  position: relative;
+}
+
+.camera::before {
+  width: 32px;
+  height: 22px;
+  left: -57px;
+  bottom: 6px;
+  position: absolute;
+  content: "";
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
   background-position: 0;
