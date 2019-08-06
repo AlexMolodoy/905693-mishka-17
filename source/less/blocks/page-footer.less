@@ -1,5 +1,22 @@
 .page-footer {
-  width: 320px;
+  width: 768px;
   height: 160px;
   background-color: #f1f1f1;
+}
+
+.page-footer__logo{
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+  }
+
+  .page-footer__logo{
+    display: block;
+    width: 102px;
+    height: 32px;
+  }
+
 }

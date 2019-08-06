@@ -1,9 +1,18 @@
 .main-nav {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   list-style: none;
+}
+
+.main-nav__list::before {
+  content: "";
   position: absolute;
   top: -47px;
   left: 269px;
@@ -12,4 +21,10 @@
   height: 14px;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list::before {
+    display: none;
+  }
 }

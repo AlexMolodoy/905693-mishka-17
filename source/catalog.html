@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,8 +13,12 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"></li>
+          <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
+          <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
+          <li class="site-list__item site-list__item--search"><a class="site-search visually-hidden" href="#">Поиск</a></li>
+          <li class="site-list__item site-list__item--basket"><a class="site-basket" href="#">Корзина: пока пуста</a></li>
         </ul>
+        <span class="site-list__item site-text">Бесплатная доставка по России</span>
       </nav>
     </header>
 
@@ -66,6 +71,7 @@
 
     </main>
     <footer class="page-footer">
+      <a class="page-footer__logo" href="#"><img src="img/logo-footer.svg" width="102" height="34" alt="logo-footer"></a>  
         <ul class="social-nets">
             <li class="social-nets__button inst"></li>
             <li class="social-nets__button fb"></li>

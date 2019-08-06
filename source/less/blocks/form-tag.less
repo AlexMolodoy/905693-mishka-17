@@ -1,12 +1,12 @@
 .form-tag {
-  
+  width: 320px;
+
 }
 
 .form-tag__main-text {
   display: block;
   padding-top: 76px;
   margin: 0;
-  width: 320px;
   height: 101px;
   background-color: #f1f1f1;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -30,4 +30,24 @@
   line-height: 1.85;
   text-align: left;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .form-tag {
+    width: 768px;
+  }
+
+  .form-tag__main-text {
+    font-family: OpenSans;
+    font-size: 43px;
+    height: 226px;
+  }
+
+  .form-text {
+    width: 612px;
+    height: 47px;
+    font-size: 17px;
+    margin-left: 51px;
+    margin-top: 68px;
+  }
 }
