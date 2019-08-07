@@ -7,20 +7,24 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="logo-mishka">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
-          <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--search"><a class="site-search visually-hidden" href="#">Поиск</a></li>
-          <li class="site-list__item site-list__item--basket"><a class="site-basket" href="#">Корзина: пока пуста</a></li>
-        </ul>
-        <span class="site-list__item site-text">Бесплатная доставка по России</span>
-      </nav>
-    </header>
+      <header class="page-header">
+          <a class="page-header__logo">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="logo-mishka">
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
+              <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
+              <li class="site-list__item site-list__item--search"><a class="site-search visually-hidden" href="#">Поиск</a></li>
+              <li class="site-list__item site-list__item--basket"><a class="site-basket" href="#">Корзина: пока пуста</a></li>
+            </ul>
+            <div class="site-list__item-event">
+              <a class="site-link">Новые поступления</a>
+              <a class="site-link">Распродажа</a>
+              <span class="site-list__item-text site-text">Бесплатная доставка по России</span>
+            </div>
+          </nav>
+        </header>
 
     <main>
       <div class="inner-cat">
@@ -63,7 +67,7 @@
       </div>
       <section class="tech-proc">
         <h2 class="tech-proc__head camera">Процесс производства</h2>
-        <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="video">
+        <img class="tech-proc__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="video">
         <p class="tech-proc__text">По просьбам наших любимых фолловеров мы сняли
           для вас подробное видео о том, как появляются наши товары.</p>
         <a href="#" class="button tech-proc__button">СДЕЛАТЬ ЗАКАЗ</a>
@@ -71,16 +75,16 @@
 
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#"><img src="img/logo-footer.svg" width="102" height="34" alt="logo-footer"></a>  
-        <ul class="social-nets">
-            <li class="social-nets__button inst"></li>
-            <li class="social-nets__button fb"></li>
-            <li class="social-nets__button twitter"></li>
-        </ul>
-        <div class="made-by">
-          <span class="made-by__text">Разработано</span>
-          <a href="https://htmlacademy.ru" class="made-by__HTML-Academy"></a>
-        </div>
-      </footer>
+        <a class="page-footer__logo" href="#"><img src="img/logo-footer.svg" width="102" height="34" alt="logo-footer"></a>  
+          <ul class="social-nets">
+              <li class="social-nets__button inst"></li>
+              <li class="social-nets__button fb"></li>
+              <li class="social-nets__button twitter"></li>
+          </ul>
+          <div class="made-by">
+            <span class="made-by__text">Разработано</span>
+            <a href="https://htmlacademy.ru" class="made-by__HTML-Academy"></a>
+          </div>
+        </footer>
   </body>
 </html>

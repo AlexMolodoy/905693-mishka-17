@@ -7,7 +7,6 @@
   display: block;
   padding-top: 76px;
   margin: 0;
-  height: 101px;
   background-color: #f1f1f1;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 27px;
@@ -38,9 +37,7 @@
   }
 
   .form-tag__main-text {
-    font-family: OpenSans;
     font-size: 43px;
-    height: 226px;
   }
 
   .form-text {
@@ -51,3 +48,18 @@
     margin-top: 68px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .form-tag__main-text {
+    width: 476px;
+    font-size: 53px;
+    padding: 105px 336px 111px 338px;
+  }
+
+  .form-text {
+    width: 672px;
+    font-size: 17px;
+    margin: 112px 253px 61px 225px;
+  }
+}
+

@@ -5,13 +5,13 @@
 }
 
 .main-nav__list {
-  display: flex;
   flex-direction: column;
   position: relative;
   list-style: none;
+  display: none;
 }
 
-.main-nav__list::before {
+.main-nav::before {
   content: "";
   position: absolute;
   top: -47px;
@@ -24,7 +24,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__list::before {
+  .main-nav::before {
     display: none;
   }
+
+  .main-nav__list {
+    display: flex;
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav::before {
+    display: none;
+  }
+
 }

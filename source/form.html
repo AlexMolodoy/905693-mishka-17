@@ -18,9 +18,14 @@
               <li class="site-list__item site-list__item--search"><a class="site-search visually-hidden" href="#">Поиск</a></li>
               <li class="site-list__item site-list__item--basket"><a class="site-basket" href="#">Корзина: пока пуста</a></li>
             </ul>
-            <span class="site-list__item site-text">Бесплатная доставка по России</span>
+            <div class="site-list__item-event">
+              <a class="site-link">Новые поступления</a>
+              <a class="site-link">Распродажа</a>
+              <span class="site-list__item-text site-text">Бесплатная доставка по России</span>
+            </div>
           </nav>
         </header>
+
     <main>
       <section class="form-tag">
         <h1 class="form-tag__main-text">Вязание на заказ</h1>
@@ -81,8 +86,10 @@
             <input type="text" placeholder="Опишите все ваши пожелания к заказу"  class="order__text-light add-table">
           </li>
         </ul>
-        <p class="allert">*Поля обязательны для заполнения</p>
-        <input type="submit" class="order-form__button button" value="ОТПРАВИТЬ ЗАКАЗ">
+        <div class="order-form__feedback-container">
+          <p class="allert">*Поля обязательны для заполнения</p>
+          <input type="submit" class="order-form__button button" value="ОТПРАВИТЬ ЗАКАЗ">
+        </div>
       </form>
     </main>
     <footer class="page-footer">
