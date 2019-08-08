@@ -2,62 +2,78 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="" width="" height="" alt="">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"></li>
-        </ul>
-      </nav>
-    </header>
+      <header class="page-header">
+          <a class="page-header__logo">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="logo-mishka">
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
+              <li class="site-list__item site-list__item--link"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
+              <li class="site-list__item site-list__item--search"><a class="site-search visually-hidden" href="#">Поиск</a></li>
+              <li class="site-list__item site-list__item--basket"><a class="site-basket" href="#">Корзина: пока пуста</a></li>
+            </ul>
+            <div class="site-list__item-event">
+              <a class="site-link">Новые поступления</a>
+              <a class="site-link">Распродажа</a>
+              <span class="site-list__item-text site-text">Бесплатная доставка по России</span>
+            </div>
+          </nav>
+        </header>
+
     <main>
-      <section class="main-tag">
-        <h1 class="main-tag__main-text">Вязание на заказ</h1>
-        <p class="main-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <section class="form-tag">
+        <h1 class="form-tag__main-text">Вязание на заказ</h1>
+        <p class="form-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
       <form class="order">
         <ul class="order-form">
           <li class="order-form__item">
             <h2 class="order-form__item-head">ТИП</h2>
-            <input type="radio" class="visually-hidden" id="inter-accessory" name="interier" value="0" checked>
-            <label for="item" class="order__text">Аксессуар для интерьера</label>
-            <input type="radio" class="visually-hidden" id="children-toys" name="toy" value="1">
-            <label for="item" class="order__text">Детская игрушка</label>
+            <div class="order-form__content order-form__content--column">
+              <input type="radio" class="visually-hidden" id="inter-accessory" name="interier" value="0" checked>
+              <label for="item" class="order__text radio-round">Аксессуар для интерьера</label>
+              <input type="radio" class="visually-hidden" id="children-toys" name="toy" value="1">
+              <label for="item" class="order__text radio-round">Детская игрушка</label>
+            </div>
           </li>
           <li class="order-form__item">
             <h2 class="order-form__item-head">ЦВЕТ</h2>
-            <input type="checkbox" id="white" class="visually-hidden" checked>
-            <label for="white" class="order__text">Белый</label>
-            <input type="checkbox" id="grey" class="visually-hidden" checked>
-            <label for="grey" class="order__text">Серый</label>
-            <input type="checkbox" id="tiff" class="visually-hidden">
-            <label for="Tiff" class="order__text">«Тиффани»</label>
-            <input type="checkbox" id="black" class="visually-hidden">
-            <label for="black" class="order__text">Черный</label>
-            <input type="checkbox" id="rose" class="visually-hidden">
-            <label for="rose" class="order__text">Розовый</label>
-            <input type="checkbox" id="orange" class="visually-hidden">
-            <label for="orange" class="order__text">Оранжевый</label>
+            <div class="order-form__content order-form__content--wraper">
+              <input type="checkbox" id="white" class="visually-hidden" checked>
+              <label for="white" class="order__text box-round">Белый</label>
+              <input type="checkbox" id="grey" class="visually-hidden" checked>
+              <label for="grey" class="order__text box-round">Серый</label>
+              <input type="checkbox" id="tiff" class="visually-hidden">
+              <label for="Tiff" class="order__text box-round">«Тиффани»</label>
+              <input type="checkbox" id="black" class="visually-hidden">
+              <label for="black" class="order__text box-round">Черный</label>
+              <input type="checkbox" id="rose" class="visually-hidden">
+              <label for="rose" class="order__text box-round">Розовый</label>
+              <input type="checkbox" id="orange" class="visually-hidden">
+              <label for="orange" class="order__text box-round">Оранжевый</label>
+            </div>
           </li>
           <li class="order-form__item">
-            <h2 class="order__item-head">ФИО</h2>
-            <label class="order__text">Имя:</label>
-            <input type="text" placeholder="Введите ваше имя*" class="order__text-light">
-            <label class="order__text">Фамилия:</label>
-            <input type="text" placeholder="Укажите фамилию*" class="order__text-light">
-            <label class="order__text">Отчество:</label>
-            <input type="text" placeholder="Отчество, если желаете" class="order__text-light">
+            <h2 class="order-form__item-head">ФИО</h2>
+            <div class="order-form__content order-form__content--column">
+              <label class="order__text--no-mar">Имя:</label>
+              <input type="text" placeholder="Введите ваше имя*" class="order__text-light">
+              <label class="order__text--no-mar">Фамилия:</label>
+              <input type="text" placeholder="Укажите фамилию*" class="order__text-light">
+              <label class="order__text--no-mar">Отчество:</label>
+              <input type="text" placeholder="Отчество, если желаете" class="order__text-light">
+            </div>
           </li>
           <li class="order-form__item">
             <h2 class="order-form__item-head">ТЕЛ</h2>
             <label class="visually-hidden">Phone number</label>
-            <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="order__text-number handset">
+            <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="order__text-light handset">
           </li>
           <li class="order-form__item">
             <h2 class="order-form__item-head">E-mail</h2>
@@ -67,23 +83,26 @@
           <li class="order-form__item">
             <h2 class="order-form__item-head">Доп</h2>
             <label class="visually-hidden">Additional info</label>
-            <input type="text" placeholder="Опишите все ваши пожелания к заказу"  class="order__text-light">
+            <input type="text" placeholder="Опишите все ваши пожелания к заказу"  class="order__text-light add-table">
           </li>
         </ul>
-        <p class="allert">*Поля обязательны для заполнения</p>
-        <input type="submit" class="button" value="ОТПРАВИТЬ ЗАКАЗ">
+        <div class="order-form__feedback-container">
+          <p class="allert">*Поля обязательны для заполнения</p>
+          <input type="submit" class="order-form__button button" value="ОТПРАВИТЬ ЗАКАЗ">
+        </div>
       </form>
     </main>
     <footer class="page-footer">
-      <ul class="social-nets">
-          <li class="social-button inst"></li>
-          <li class="social-button fb"></li>
-          <li class="social-button twitter"></li>
-      </ul>
-      <div class="made-by">
-        <span class="made-by__text">Разработано</span>
-        <a href="https://htmlacademy.ru" class="made-by__HTML-Academy"></a>
-      </div>
-    </footer>
+        <a class="page-footer__logo" href="#"><img src="img/logo-footer.svg" width="102" height="34" alt="logo-footer"></a>
+          <ul class="social-nets">
+              <li class="social-nets__button inst"></li>
+              <li class="social-nets__button fb"></li>
+              <li class="social-nets__button twitter"></li>
+          </ul>
+          <div class="made-by">
+            <span class="made-by__text">Разработано</span>
+            <a href="https://htmlacademy.ru" class="made-by__HTML-Academy"></a>
+          </div>
+        </footer>
   </body>
 </html>

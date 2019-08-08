@@ -2,7 +2,6 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(373px - 193px - 93px);
   padding: 93px 39px 193px 39px;
   margin: 0;
 }
@@ -24,4 +23,31 @@
 
 .main-text {
   color: black;
+}
+
+@media (min-width: @tablet-width) {
+  .main-tag__main-text {
+    width: 494px;
+    height: 95px;
+    padding-left: 139px;
+    padding-top: 161px;
+    font-size: 43px;
+  }
+
+  .main-tag {
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-tag__main-text {
+    width: 604px;
+    font-size: 53px;
+    padding-left: 273px;
+    padding-top: 161px;
+  }
+
+  .main-tag {
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
 }
