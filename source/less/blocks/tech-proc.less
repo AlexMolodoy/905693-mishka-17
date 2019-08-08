@@ -97,20 +97,23 @@
 @media (min-width: @desktop-width) {
   .tech-proc {
     width: 1049px;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .tech-proc__text {
     width: 222px;
     font-size: 15px;
     margin-left: 811px;
-    margin-top: -350px;
+    // margin-top: -350px;
   }
 
   .tech-proc__img {
     width: 682px;
     height: 455px;
-    margin-top: -60px;
+    position: absolute;
   }
 
   .tech-proc__head {
@@ -121,9 +124,8 @@
   }
 
   .tech-proc__button {
-    margin-left: auto;
-    margin-right: auto;
     width: 230px;
     height: 52px;
+    margin-left: 811px;
   }
 }
