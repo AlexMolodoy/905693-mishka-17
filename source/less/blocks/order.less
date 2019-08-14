@@ -1,12 +1,11 @@
 .order {
-  color: black;
+  padding: 0 30px 55px;
 }
 
 .order-form {
   list-style: none;
-  padding-left: 30px;
-  padding-right: 30px;
   margin: 0;
+  padding: 0;
 }
 
 .order-form__item {
@@ -14,40 +13,38 @@
 }
 
 .order-form__item-head {
-  width: 36px;
-  height: 12px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 0.94;
-  letter-spacing: normal;
-  text-align: left;
   color: #63d1bb;
+  margin: 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 200px;
+    left: 63px;
+    top: 5px;
+    background-color: #63d1bb;
+  }
 }
+
 
 .order__text {
   display: block;
-  margin-top: 35px;
-  margin-bottom: 25px;
-  width: 154px;
-  height: 35px;
-  padding-left: 62px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.06;
-  letter-spacing: normal;
-  text-align: left;
   color: black;
 }
 
 .radio-round,
 .box-round {
   position: relative;
+  padding-left: 62px;
 }
 
 .order__text::before {
@@ -152,9 +149,9 @@
     display: flex;
   }
 
-  .order-form__content--column {
-    flex-direction: column;
-  }
+.order-form__content--column {
+  flex-direction: column;
+}
 
   .order-form__content--wraper {
     flex-wrap: wrap;

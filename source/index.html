@@ -46,20 +46,20 @@
           <h2 class="product__type">ТОВАР НЕДЕЛИ</h2>
         </div>
         <div class="product__container">
-          <div class="product__container--text">
+          <div class="product__container-text">
             <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-            <ul class="product__settings">
-                <li class="">
-                  <span class="">Цвет:</span>
-                  <span class="">«Тиффани»/серый</span>
+            <ul class="product__settings settings">
+                <li class="settings__item">
+                  <span class="settings__item-width">Цвет:</span>
+                  <span class="settings__item-allignment">«Тиффани»/серый</span>
                 </li>
-                <li class="">
-                  <span class="">Диаметр:</span>
-                  <span class="">25 см</span>
+                <li class="settings__item">
+                  <span class="settings__item-width">Диаметр:</span>
+                  <span class="settings__item-allignment">25 см</span>
                 </li>
-                <li class="">
-                  <span class="">Высота:</span>
-                  <span class="">15 см</span>
+                <li class="settings__item">
+                  <span class="settings__item-width">Высота:</span>
+                  <span class="settings__item-allignment">15 см</span>
                 </li>
             </ul>
           </div>
@@ -101,37 +101,35 @@
         <div class="contacts__container">
           <h2 class="contacts__head">Контакты</h2>
           <ul class="contacts__table">
-              <li class="">
-                <span class="">e-mail:</span>
-                <span class="">info@mimimishkashop.ru</span>
+              <li class="contacts__item">
+                <span class="contacts__item-width">e-mail:</span>
+                <span class="contacts__item-address">info@mimimishkashop.ru</span>
               </li>
-              <li class="">
-                <span class="">адрес:</span>
-                <span class="">г. Санкт-Петербург,
-                    ул. Большая Конюшенная,
-                    д. 19/8, офис 101</span>
+              <li class="contacts__item">
+                <span class="contacts__item-width">адрес:</span>
+                <span class="contacts__item-address">г. Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</span>
               </li>
           </ul>
 
         </div>
         <div class="contacts__map">
           <img src="img/map-mobile@1x.jpg" height="457" width="322" alt="map-spb">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="318" height="453" class="real-map" allowfullscreen></iframe>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="318" height="453" class="real-map" allowfullscreen></iframe> -->
         </div>
         <a class="button contacts__feedback">НАПИШИТЕ НАМ</a>
       </section>
     </main>
     <footer class="page-footer">
         <a class="page-footer__logo" href="#"><img src="img/logo-footer.svg" width="102" height="34" alt="logo-footer"></a>
-          <ul class="social-nets">
-              <li class="social-nets__button inst"></li>
-              <li class="social-nets__button fb"></li>
-              <li class="social-nets__button twitter"></li>
-          </ul>
-          <div class="made-by">
-            <span class="made-by__text">Разработано</span>
-            <a href="https://htmlacademy.ru" class="made-by__HTML-Academy"></a>
-          </div>
-        </footer>
+        <ul class="page-footer__social  page-footer__social--underline">
+          <li class="page-footer__social-nets page-footer__social-nets--inst"></li>
+          <li class="page-footer__social-nets page-footer__social-nets--fb"></li>
+          <li class="page-footer__social-nets page-footer__social-nets--twitter"></li>
+        </ul>
+        <div class="page-footer__made-by">
+          <span class="page-footer__text">Разработано</span>
+          <a href="https://htmlacademy.ru" class="page-footer__HTML-Academy"></a>
+       </div>
+      </footer>
   </body>
 </html>
