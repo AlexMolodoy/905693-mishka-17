@@ -32,42 +32,39 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
-  text-align: left;
   text-decoration: none;
   color: black;
 }
 
+
 .site-list__item--search {
   position: relative;
-}
-
-.site-list__item--search::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-image: url("../img/icon-search.svg");
-  background-position: 0;
-  background-repeat: no-repeat;
-  width: 21px;
-  height: 21px;
-
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/icon-search.svg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+  }
 }
 
 .site-list__item--basket {
   position: relative;
-}
-
-.site-list__item--basket::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-image: url("../img/icon-cart.svg");
-  background-position: 0;
-  background-repeat: no-repeat;
-  width: 21px;
-  height: 21px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/icon-cart.svg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+  }
 }
 
 .site-link {
@@ -85,11 +82,30 @@
     justify-content: space-between;
   }
 
+  .site-list__item:nth-child(1) {
+    padding: 0;
+    border: none;
+  }
   
+  .site-list__item:nth-child(2) {
+    padding: 0 15px 0 37px;
+    border: none;
+  }
+
+  .site-list__item:nth-child(3) {
+    padding: 0;
+    width: 81px;
+    margin-top: -88px;
+  }
+  
+  .site-list__item:nth-child(4) {
+    padding: 35px 50px 35px 83px;
+    margin-top: -88px;
+  }
 
   .site-list__item {
+    padding: 25px 0 0 0;
     margin: 0;
-    
   }
 
   .site-list__item-text {
@@ -106,11 +122,8 @@
   }
 
   .site-text {
-    margin-left: auto;
-    margin-top: -30px;
-    margin-right: 50px;
-    width: 250px;
-    height: 14px;
+    display: block;
+    margin: -25px 50px 0 auto;
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 1.6;

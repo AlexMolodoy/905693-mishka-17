@@ -8,7 +8,6 @@
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
-  text-align: center;
   color: #444444;
   margin: 0;
 }
@@ -40,16 +39,28 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-tag__main-text {
-    width: 494px;
-    height: 95px;
-    padding-left: 139px;
-    padding-top: 161px;
+  .main-tag__text {
     font-size: 43px;
   }
 
-  .main-tag {
-    background-image: url("../img/hero-tablet@1x.jpg");
+  .main-tag__text--background {
+    position: relative;
+    padding: 104px 170px 90px;
+    &::before {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 0;
+    }
+  }
+
+  .main-tag__text-p {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .main-tag__text-p--position {
+    padding: 80px 105px 0 51px;
   }
 }
 

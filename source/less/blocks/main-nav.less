@@ -26,18 +26,21 @@
 }
 
 .main-nav__event {
-
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav::before {
+  .main-nav {
+    padding-left: 50px;
+  }
+
+  .main-nav__button {
     display: none;
   }
 
   .main-nav__list {
     display: flex;
-    margin-top: -50px;
-  }
+    }
 }
 
 @media (min-width: @desktop-width) {
