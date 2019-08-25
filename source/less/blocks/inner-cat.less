@@ -38,20 +38,18 @@
 }
 
 @media (min-width: @desktop-width) {
-  .inner-cat__head {
-    width: 455px;
-    font-size: 53px;
-    padding: 105px 346px 99px 349px;
-  }
-
-  .inner-cat__item {
-    margin-left: 52px;
-    flex-direction: column;
+  .inner-cat {
+    padding: 111px 50px 57px;
   }
 
   .inner-cat__list {
+    justify-content: space-between;
     padding: 0;
     list-style: none;
     display: flex;
+  }
+
+  .inner-cat__item:nth-child(2) {
+    padding: 0;
   }
 }
