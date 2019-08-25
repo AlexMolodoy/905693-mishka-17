@@ -4,6 +4,7 @@
   position: relative;
   margin-top: -75px;
   margin-bottom: 0;
+  z-index: 0;
 }
 
 .cat-list__item {
@@ -32,55 +33,80 @@
 
 .cat-list__item-text--lamp {
   position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 215px;
+    top: -7px;
+    opacity: 0.5;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 40px;
+    height: 62px;
+    object-fit: contain;
+  }
 }
 
-.cat-list__item-text--lamp::before {
-  content: "";
-  position: absolute;
-  left: 215px;
-  top: -7px;
-  opacity: 0.5;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: 0;
-  width: 40px;
-  height: 62px;
-  object-fit: contain;
-}
 
 .cat-list__item-text--lego {
   position: relative;
-}
-
-.cat-list__item-text--lego::before {
-  content: "";
-  position: absolute;
-  left: 215px;
-  top: -7px;
-  opacity: 0.5;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  background-position: 0;
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 215px;
+    top: -7px;
+    opacity: 0.5;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .cat-list {
     display: flex;
-    margin-left: 52px;
-    margin-right: 52px;
+    padding: 0 52px;
+    margin-top: 0px;
   }
 
-  .cat-list__item {
-    width: 334px;
-    height: 119px;
+  .cat-list__item:nth-child(1) {
+    padding: 35px 187px 38px 39px;
   }
+  
+  .cat-list__item:nth-child(2) {
+    padding: 35px 204px 38px 36px;
+  }
+
+  
 }
 
 @media (min-width: @desktop-width) {
   .cat-list__item {
     width: 525px;
+    margin-top: -100px;
+  }
+
+  .cat-list__item:nth-child(1) {
+    padding: 35px 377px 38px 39px;
+  }
+
+  .cat-list__item-text--lamp {
+    &::before {
+      left: 412px;
+    }
+  }
+  
+  .cat-list__item:nth-child(2) {
+    padding: 35px 395px 38px 36px;
+  }
+
+  .cat-list__item-text--lego {
+    &::before {
+      left: 394px;
+    }
   }
 }

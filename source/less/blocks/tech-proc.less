@@ -5,8 +5,6 @@
 }
 
 .tech-proc__head {
-  width: 126px;
-  height: 41px;
   margin-top: 29px;
   margin-left: 91px;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -21,7 +19,7 @@
   &::before {
     width: 32px;
     height: 22px;
-    left: -57px;
+    left: 42px;
     bottom: 6px;
     position: absolute;
     content: "";
@@ -55,21 +53,31 @@
 
 @media (min-width: @tablet-width) {
   .tech-proc {
+    position: relative;
     border: solid 1px #ececec;
-    width: 668px;
-    margin-left: 51px;
+    width: 666px;
+    margin: 0 50px 63px;
   }
 
   .tech-proc__head {
-    width: 241px;
-    height: 20px;
+    margin: 0;
+    padding: 510px 320px 0 107px;
     font-size: 20px;
-    margin-left: 107px;
+  }
+
+  .tech-proc__img {
+    width: 666px;
+    height: 455px;
+    top: 0;
+    position: absolute;
+  }
+
+  .tech-proc__text {
+    padding: 41px 47px 0 40px;
   }
 
   .tech-proc__button {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 46px;
     width: 584px;
     height: 52px;
   }
@@ -89,12 +97,6 @@
     font-size: 15px;
     margin-left: 811px;
     // margin-top: -350px;
-  }
-
-  .tech-proc__img {
-    width: 682px;
-    height: 455px;
-    position: absolute;
   }
 
   .tech-proc__head {

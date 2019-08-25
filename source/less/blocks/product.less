@@ -36,6 +36,10 @@
   margin: 0;
 }
 
+.product__settings {
+  padding: 34px 31px 0 31px;
+}
+
 .product__container-img {
   width: 260px;
   height: 315px;
@@ -67,81 +71,123 @@
 
 @media (min-width: @tablet-width) {
   .product {
-    padding-left: 52px;
+    padding: 55px 52px;
     margin: 0;
   }
 
   .product__head {
     display: flex;
     justify-content: space-between;
-    padding-top: 55px;
   }
 
   .product__name {
-    width: 420px;
-    height: 42px;
     font-size: 43px;
     padding: 0;
   }
 
   .product__type {
     width: 70px;
-    height: 33px;
-    margin-right: 80px;
+    font-size: 17px;
+    margin-right: 30px;
+    padding: 0;
   }
 
   .product__container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 55px;
+    padding-top: 55px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-position: 0;
+      left: -52px;
+      height: 30px;
+      width: 770px;
+      bottom: -55px;
+    }
   }
 
   .product__container-text {
-    margin-right: 53px;
+    width: 292px;
+    margin-right: 43px;
+  }
+
+  .product__description {
+    padding: 0 9px 0 0;
+  }
+
+  .product__settings {
+    padding: 55px 0 0;
+  }
+
+  .product__button {
+    margin: 0;
   }
 
   .product__container-img {
-    width: 333px;
+    width: 320px;
     height: 404px;
-    margin-right: 52px;
+    margin: 0;
+  }
+
+  .product__container-value {
+    padding: 0;
+    margin-top: -115px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product {
+    padding: 134px 50px 73px 225px;
+  }
+
+  .product__head {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: -128px;
+  }
+
+  .product__name {
+    padding: 0 360px 0 58px;
+    font-size: 53px;
+    flex-shrink: 0;
+  }
+
+  .product__type {
+    margin: 0;
+  }
+
+  .product__container-text {
+    width: 290px;
+    margin-right: 50px;
+  }
+
+  .product__description {
+    font-size: 17px;
+  }
+
+  .product__container-img {
+    margin-top: -166px;
+    width: 525px;
+    height: 636px;
+    z-index: -1;
   }
 
   .product__container-value {
     margin-top: -200px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .product__head {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-top: 55px;
-  }
-
-  .product__name {
-    width: 515px;
-    font-size: 53px;
-    padding-right: 410px;
-  }
-
-  .product__type {
-    width: 70px;
-    height: 33px;
-    padding-left: 97px;
-  }
-
-  .product__container--text {
-    width: 291px;
-    margin-left: 225px;
-  }
-
-  .product__container--img {
-    width: 525px;
-    height: 636px;
-  }
-
-  .product__container--value {
-    margin-top: -200px;
-    margin-left: 225px;
+  .product__container {
+    padding-top: 52px;
+    &::before {
+      left: -225px;
+      height: 30px;
+      width: 1150px;
+      bottom: -55px;
+    }
   }
 }

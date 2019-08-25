@@ -8,15 +8,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="logo-mishka">
       </a>
       <nav class="main-nav">
         <button class="main-nav__button" type="button" aria-label="Main menu"></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
-          <li class="site-list__item"><a class="site-list__item-link site-list__item-link--search" href="#">Поиск по сайту</a></li>
+          <li class="site-list__item"><a class="site-list__item-link site-list__item-link--search site-list__item-link--display" href="#">Поиск по сайту</a></li>
           <li class="site-list__item"><a class="site-list__item-link site-list__item-link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
         <div class="main-nav__event">
@@ -36,28 +36,28 @@
         <ul class="order-form">
           <li class="order-form__item">
             <h2 class="order-form__item-head">ТИП</h2>
-            <div class="order-form__content order-form__content--row">
-              <input type="radio" class="visually-hidden" id="inter-accessory" name="interier" value="0" checked>
-              <label for="item" class="order__text order__text--radio-round order__text--position-a">Аксессуар для интерьера</label>
-              <input type="radio" class="visually-hidden" id="children-toys" name="toy" value="1">
-              <label for="item" class="order__text order__text--radio-round order__text--position-b">Детская игрушка</label>
+            <div class="order-form__content order-form__content--type">
+              <input type="radio" class="visually-hidden order-form__round" id="inter-accessory" name="interier" value="0" checked>
+              <label for="inter-accessory" class="order__text order__text--radio-round">Аксессуар для интерьера</label>
+              <input type="radio" class="visually-hidden order-form__round" id="children-toys" name="toy" value="1">
+              <label for="children-toys" class="order__text order__text--radio-round">Детская игрушка</label>
             </div>
           </li>
           <li class="order-form__item">
             <h2 class="order-form__item-head">ЦВЕТ</h2>
-            <div class="order-form__content order-form__content--wraper">
-              <input type="checkbox" id="white" class="visually-hidden" checked>
-              <label for="white" class="order__text order__text--box-round order__text--position-c">Белый</label>
-              <input type="checkbox" id="grey" class="visually-hidden" checked>
-              <label for="grey" class="order__text order__text--box-round order__text--position-d">Серый</label>
-              <input type="checkbox" id="tiff" class="visually-hidden">
-              <label for="Tiff" class="order__text order__text--box-round order__text--position-e">«Тиффани»</label>
-              <input type="checkbox" id="black" class="visually-hidden">
-              <label for="black" class="order__text order__text--box-round order__text--position-f">Черный</label>
-              <input type="checkbox" id="rose" class="visually-hidden">
-              <label for="rose" class="order__text order__text--box-round order__text--position-g">Розовый</label>
-              <input type="checkbox" id="orange" class="visually-hidden">
-              <label for="orange" class="order__text order__text--box-round order__text--position-h">Оранжевый</label>
+            <div class="order-form__content order-form__content--color">
+              <input type="checkbox" id="white" class="visually-hidden order-form__box" checked>
+              <label for="white" class="order__text order__text--box-round">Белый</label>
+              <input type="checkbox" id="grey" class="visually-hidden order-form__box" checked>
+              <label for="grey" class="order__text order__text--box-round">Серый</label>
+              <input type="checkbox" id="tiff" class="visually-hidden order-form__box">
+              <label for="tiff" class="order__text order__text--box-round">«Тиффани»</label>
+              <input type="checkbox" id="black" class="visually-hidden order-form__box">
+              <label for="black" class="order__text order__text--box-round">Черный</label>
+              <input type="checkbox" id="rose" class="visually-hidden order-form__box">
+              <label for="rose" class="order__text order__text--box-round">Розовый</label>
+              <input type="checkbox" id="orange" class="visually-hidden order-form__box">
+              <label for="orange" class="order__text order__text--box-round">Оранжевый</label>
             </div>
           </li>
           <li class="order-form__item">
@@ -72,23 +72,25 @@
             </div>
           </li>
           <li class="order-form__item">
-            <h2 class="order-form__item-head">ТЕЛ</h2>
-            <label class="visually-hidden">Phone number</label>
-            <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="order__text-light order__text-light--handset order__text-light--position">
-          </li>
-          <li class="order-form__item">
-            <h2 class="order-form__item-head">E-mail</h2>
-            <label class="visually-hidden">E-mail</label>
-            <input type="email" placeholder="Ваш Email*" class="order__text-light order__text-light--envelope order__text-light--position">
+            <div class="order-form__item-contats">
+              <h2 class="order-form__item-head">ТЕЛ</h2>
+              <label class="visually-hidden">Phone number</label>
+              <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="order__text-light order__text-light--form">
+            </div>
+            <div class="order-form__item-contats">
+              <h2 class="order-form__item-head">E-mail</h2>
+              <label class="visually-hidden">E-mail</label>
+              <input type="email" placeholder="Ваш Email*" class="order__text-light order__text-light--form">
+            </div>
           </li>
           <li class="order-form__item">
             <h2 class="order-form__item-head">Доп</h2>
             <label class="visually-hidden">Additional info</label>
-            <input type="text" placeholder="Опишите все ваши пожелания к заказу"  class="order__text-light order__text-light--add-table order__text-light--position-add">
+            <input type="text" placeholder="Опишите все ваши пожелания к заказу"  class="order__text-light order__text-light--add-table">
           </li>
         </ul>
         <div class="order-form__feedback-container">
-          <p class="allert">*Поля обязательны для заполнения</p>
+          <p class="order-form__allert">*Поля обязательны для заполнения</p>
           <input type="submit" class="order-form__button button" value="ОТПРАВИТЬ ЗАКАЗ">
         </div>
       </form>
@@ -100,10 +102,7 @@
         <li class="page-footer__social-nets page-footer__social-nets--fb"></li>
         <li class="page-footer__social-nets page-footer__social-nets--twitter"></li>
       </ul>
-      <div class="page-footer__made-by">
-        <span class="page-footer__text">Разработано</span>
-        <a href="https://htmlacademy.ru" class="page-footer__HTML-Academy"></a>
-     </div>
+      <a href="https://htmlacademy.ru" class="page-footer__text">Разработано</a>
     </footer>
   </body>
 </html>

@@ -54,6 +54,15 @@
   width: 129px;
 }
 
+.reviews__control:hover,
+.reviews__control:focus {
+  opacity: 0.6;
+}
+
+.reviews__control:active {
+  opacity: 0.3;
+}
+
 .reviews__control--prev {
   background-image: url("../img/icon-left-arrow.svg");
 }
@@ -73,32 +82,55 @@
 }
 
 @media (min-width: @tablet-width) {
+  .reviews {
+    padding: 75px 52px 122px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0;
+      height: 457px;
+      width: 350px;
+      left: -50px;
+      top: 0;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-position: 0;
+      width: 771px;
+      height: 30px;
+      left: -50px;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
   .reviews__head {
-    width: 179px;
-    height: 33px;
     font-size: 43px;
-    margin-left: 49px;
   }
 
   .reviews__text {
-    width: 642px;
-    height: 107px;
+    padding: 65px 29px 68px 0;
     font-size: 17px;
-    margin-top: 55px;
-    margin-left: 49px;
-  }
-
-  .reviews__hero {
-    margin-left: 49px;
-  }
-
-  .reviews__hero--social {
-    margin-left: 49px;
   }
 
   .reviews-nav {
-    margin-left: 500px;
-    margin-top: -80px;
+    padding: 0;
+  }
+
+  .reviews__hero {
+    padding: 0;
+  }
+
+  .reviews__hero-controls {
+    display: flex;
+    justify-content: space-between;
   }
 
   .reviews__control {
@@ -106,9 +138,28 @@
   }
 
   .reviews__feedback {
-    margin-top: -300px;
-    margin-left: 545px;
     width: 175px;
     height: 52px;
+    position: absolute;
+    margin: 0;
+    right: 52px;
+    top: 79px;
+
+  }
+}
+
+@media (min-width: @desktop-width) { 
+  .reviews {
+    padding: 80px 52px 169px 225px;
+    &::before {
+      left: 52px;
+      top: 0;
+    }
+    &::after {
+      width: 1052px;
+      left: 52px;
+      bottom: 0;
+      z-index: -1;
+    }
   }
 }

@@ -8,15 +8,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="logo-mishka">
       </a>
       <nav class="main-nav">
         <button class="main-nav__button" type="button" aria-label="Main menu"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
-          <li class="site-list__item"><a class="site-list__item-link site-list__item-link--search" href="#">Поиск по сайту</a></li>
+          <li class="site-list__item"><a class="site-list__item-link" href="form.html">Вязание на заказ</a></li>
+          <li class="site-list__item"><a class="site-list__item-link site-list__item-link--search site-list__item-link--display" href="#">Поиск по сайту</a></li>
           <li class="site-list__item"><a class="site-list__item-link site-list__item-link--basket" href="#">Корзина: пока пуста</a></li>
         </ul>
         <div class="main-nav__event">
@@ -36,8 +36,10 @@
           <li class="inner-cat__item item">
             <a href="#" class="item__img"><img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="bunny-toy"></a>
             <div class="item__text">
-              <a href="#" class="item__text-head">Зайчик-попрыгайчик</a>
-              <p class="item__text-desc">Рост 30 см, вес 200 г</p>
+              <div class="item__text-top">
+                <a href="#" class="item__text-head">Зайчик-попрыгайчик</a>
+                <p class="item__text-desc">Рост 30 см, вес 200 г</p>
+              </div>
               <div class="item__value">
                 <span class="item__value-text">1 200 руб.</span>
                 <a href="#" class="item__basket"></a>
@@ -47,8 +49,10 @@
           <li class="inner-cat__item item">
               <a href="#" class="item__img"><img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="bowl-toy"></a>
               <div class="item__text">
-                <a href="#" class="item__text-head">Корзинка для белья</a>
-                <p class="item__text-desc">Диаметр 15 см, высота 10 см</p>
+                <div class="item__text-top">
+                  <a href="#" class="item__text-head">Корзинка для белья</a>
+                  <p class="item__text-desc">Диаметр 15 см, высота 10 см</p>
+                </div>
                 <div class="item__value">
                   <span class="item__value-text">690 руб.</span>
                   <a href="#" class="item__basket"></a>
@@ -58,8 +62,10 @@
             <li class="inner-cat__item item">
                 <a href="#" class="item__img"><img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="toys"></a>
                 <div class="item__text">
-                  <a href="#" class="item__text-head">Большая корзинка для игрушек</a>
-                  <p class="item__text-desc">Диаметр 30 см, высота 30 см</p>
+                  <div class="item__text-top">
+                    <a href="#" class="item__text-head">Большая корзинка для игрушек</a>
+                    <p class="item__text-desc">Диаметр 30 см, высота 30 см</p>
+                  </div>
                   <div class="item__value">
                     <span class="item__value-text">1 500 руб.</span>
                     <a href="#" class="item__basket"></a>
@@ -68,6 +74,16 @@
               </li>
         </ul>
       </div>
+      <section class="basket-form">
+        <h2 class="basket-form__head">Добавить в корзину</h2>
+        <p class="basket-form__text">Выберите размер:</p>
+        <ul class="basket-form__size-list">
+          <li class="basket-form__size-item">S</li>
+          <li class="basket-form__size-item">M</li>
+          <li class="basket-form__size-item">L</li>
+        </ul>
+        <button class="basket-form__button button">Добавить</button>
+      </section>
       <section class="tech-proc">
         <h2 class="tech-proc__head tech-proc__head--camera">Процесс производства</h2>
         <img class="tech-proc__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="video">
@@ -83,10 +99,7 @@
         <li class="page-footer__social-nets page-footer__social-nets--fb"></li>
         <li class="page-footer__social-nets page-footer__social-nets--twitter"></li>
       </ul>
-      <div class="page-footer__made-by">
-        <span class="page-footer__text">Разработано</span>
-        <a href="https://htmlacademy.ru" class="page-footer__HTML-Academy"></a>
-     </div>
+      <a href="https://htmlacademy.ru" class="page-footer__text">Разработано</a>
     </footer>
   </body>
 </html>

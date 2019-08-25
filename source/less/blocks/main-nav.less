@@ -10,6 +10,8 @@
   top: -47px;
   left: 269px;
   background-image: url("../img/icon-menu-open.svg");
+  background-color: white;
+  border: none;
   width: 20px;
   height: 14px;
   padding: 0;
@@ -25,26 +27,34 @@
   margin: 0;
 }
 
-.main-nav__event {
-  position: relative;
-}
-
 @media (min-width: @tablet-width) {
-  .main-nav {
-    padding-left: 50px;
-  }
-
   .main-nav__button {
     display: none;
   }
 
-  .main-nav__list {
-    display: flex;
-    }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav::before {
+  .main-nav{
+    padding: 0;
+    &::before {
     display: none;
+    }
+  }
+    
+  .main-nav__event {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 0 0 50px;
+    width: 1100px;
+    top: 44px;
+    left: 0;
+  }
+
+  .main-nav__event-link {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
   }
 }

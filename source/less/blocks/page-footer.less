@@ -1,7 +1,6 @@
 .page-footer {
   padding: 25px 30px;
   margin-top: 39px; 
-  height: 160px;
   background-color: #f1f1f1;
 }
 
@@ -38,26 +37,30 @@
 }
 
 .page-footer__text {
+  text-decoration: none;
   display: block;
-  padding: 56px 0 0 39px;
+  padding: 28px 0 0 39px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
   color: black;
-}
-
-.page-footer__HTML-Academy {
   position: relative;
   &::before {
+    content: "";
+    position: absolute;
     width: 27px;
     height: 34px;
-    left: 224px;
-    bottom: -61px;
+    left: 190px;
+    top: 20px;
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
     background-position: 0;
   }
+}
+
+.page-footer__text:active {
+  opacity: 0.3;
 }
 
 .page-footer__logo {
@@ -67,6 +70,8 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
+    padding: 51px 107px 58px;
+    justify-content: space-between;
   }
 
   .page-footer__logo {
@@ -74,9 +79,24 @@
     width: 102px;
     height: 32px;
   }
+
+  .page-footer__social {
+    padding: 0;
+  }
+
+  .page-footer__social--underline {
+    border-bottom: none;
+  }
+
+  .page-footer__text {
+    padding: 0;
+    &::before {
+      left: 150px;
+      top: -6px; 
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-  }
+  
 }

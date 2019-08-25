@@ -1,5 +1,5 @@
 .about-us {
-  padding: 76px 0 0 30px;
+  padding: 76px 38px 0 30px;
 }
 
 .about-us__head {
@@ -24,19 +24,18 @@
   font-weight: bold;
   line-height: 1.18;
   color: black;
-}
-
-.about-us__item::before {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: 0;
-  bottom: 57px;
-  content: "";
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0;
+    bottom: 57px;
+    content: "";
+  }
 }
 
 .about-us__item--flower {
   position: relative;
-  padding-right: 116px;
+  // padding-right: 116px;
   &::before {
     width: 175px;
     height: 37px;
@@ -46,7 +45,7 @@
 
 .about-us__item--money {
   position: relative;
-  padding-right: 90px;
+  // padding-right: 90px;
   &::before {
     width: 200px;
   height: 38px;
@@ -56,7 +55,7 @@
 
 .about-us__item--heart {
   position: relative;
-  padding-right: 110px;
+  // padding-right: 110px;
   &::before {
     width: 181px;
   height: 38px;
@@ -66,7 +65,7 @@
 
 .about-us__item--ball {
   position: relative;
-  padding-right: 79px;
+  // padding-right: 79px;
   &::before {
     width: 211px;
     height: 37px;
@@ -76,17 +75,17 @@
 
 .about-us__item--rocket {
   position: relative;
-  padding-right: 39px;
+  // padding-right: 39px;
   &::before {
     width: 251px;
-  height: 37px;
-  background-image: url("../img/icon-feature-rocket.svg");
+    height: 37px;
+    background-image: url("../img/icon-feature-rocket.svg");
   }
 }
 
 .about-us__item--gift {
   position: relative;
-  padding-right: 91px;
+  // padding-right: 91px;
   &::before {
     width: 198px;
     height: 37px;
@@ -96,13 +95,10 @@
 
 @media (min-width: @tablet-width) {
   .about-us {
-    padding: 0;
-    margin-left: 51px;
+    padding: 60px 52px 82px;
   }
 
   .about-us__head {
-    width: 316px;
-    height: 42px;
     font-size: 43px;
   }
 
@@ -110,19 +106,32 @@
     display: flex;
     padding: 0;
     flex-direction: column;
-    width: 295px;
-    height: 390px;
+    height: 450px;
+    width: 334px;
     flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    margin-top: 100px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-us {
-    margin-left: 225px;
-    width: 350px;
+    padding: 70px 279px 89px 225px;
   }
 
   .about-us__item {
-    width: 350px;
+    width: 300px;
   }
+  .about-us__list {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    // flex-wrap: nowrap;
+  }
+
 }

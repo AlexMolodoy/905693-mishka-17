@@ -9,20 +9,22 @@
   </head>
   <body>
       <header class="page-header">
-          <a class="page-header__logo">
+          <a href="i#" class="page-header__logo">
               <img src="img/logo-mobile.svg" width="86" height="35" alt="logo-mishka">
           </a>
           <nav class="main-nav">
             <button class="main-nav__button" type="button" aria-label="Main menu"></button>
             <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a class="site-list__item-link" href="#">Каталог товаров</a></li>
-              <li class="site-list__item"><a class="site-list__item-link" href="#">Вязание на заказ</a></li>
-              <li class="site-list__item"><a class="site-list__item-link site-list__item-link--search" href="#">Поиск по сайту</a></li>
+              <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Каталог товаров</a></li>
+              <li class="site-list__item"><a class="site-list__item-link" href="form.html">Вязание на заказ</a></li>
+              <li class="site-list__item"><a class="site-list__item-link site-list__item-link--search site-list__item-link--display" href="#">Поиск по сайту</a></li>
               <li class="site-list__item"><a class="site-list__item-link site-list__item-link--basket" href="#">Корзина: пока пуста</a></li>
             </ul>
             <div class="main-nav__event">
-              <a class="site-link">Новые поступления</a>
-              <a class="site-link">Распродажа</a>
+              <div class="main-nav__event-link">
+                <a class="site-link">Новые поступления</a>
+                <a class="site-link">Распродажа</a>
+              </div>
               <span class="site-text">Бесплатная доставка по России</span>
             </div>
           </nav>
@@ -72,6 +74,16 @@
           </div>
         </div>
       </section>
+      <section class="basket-form">
+        <h2 class="basket-form__head">Добавить в корзину</h2>
+        <p class="basket-form__text">Выберите размер:</p>
+        <ul class="basket-form__size-list">
+          <li class="basket-form__size-item">S</li>
+          <li class="basket-form__size-item">M</li>
+          <li class="basket-form__size-item">L</li>
+        </ul>
+        <button class="basket-form__button button">Добавить</button>
+      </section>
       <div class="about-us">
         <h2 class="about-us__head">Коротко о нас:</h2>
         <ul class="about-us__list">
@@ -89,12 +101,16 @@
           количества лайков, как у популярных инстамамочек. В отчаянии, я
           накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали
           более стильными, а также набирают больше лайков!</p>
-        <h3 class="reviews__hero">Анастасия Красильникова</h3>
-        <a href="#" class="reviews__social">@misssssiskras</a>
-        <div class="reviews-nav">
-          <button class="reviews__control reviews__control--prev" type="button"></button>
-          <button class="reviews__control reviews__control--next" type="button"></button>
+        <div class="reviews__hero-controls">
+          <div class="reviews__hero-social">
+            <h3 class="reviews__hero">Анастасия Красильникова</h3>
+            <a href="#" class="reviews__social">@misssssiskras</a>
           </div>
+          <div class="reviews-nav">
+            <button class="reviews__control reviews__control--prev" type="button"></button>
+            <button class="reviews__control reviews__control--next" type="button"></button>
+          </div>
+        </div>
         <a href="#" class="button reviews__feedback">Написать</a>
       </section>
       <section class="contacts">
@@ -103,18 +119,17 @@
           <ul class="contacts__table">
               <li class="contacts__item">
                 <span class="contacts__item-width">e-mail:</span>
-                <span class="contacts__item-address">info@mimimishkashop.ru</span>
+                <a href="#" class="contacts__item-address contacts__item-address--link">info@mimimishkashop.ru</a>
               </li>
               <li class="contacts__item">
                 <span class="contacts__item-width">адрес:</span>
                 <span class="contacts__item-address">г. Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</span>
               </li>
           </ul>
-
         </div>
         <div class="contacts__map">
           <img src="img/map-mobile@1x.jpg" height="457" width="322" alt="map-spb">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="318" height="453" class="real-map" allowfullscreen></iframe>
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="318" height="453" class="real-map" allowfullscreen></iframe> -->
         </div>
         <a class="button contacts__feedback">НАПИШИТЕ НАМ</a>
       </section>
@@ -126,10 +141,7 @@
           <li class="page-footer__social-nets page-footer__social-nets--fb"></li>
           <li class="page-footer__social-nets page-footer__social-nets--twitter"></li>
         </ul>
-        <div class="page-footer__made-by">
-          <span class="page-footer__text">Разработано</span>
-          <a href="https://htmlacademy.ru" class="page-footer__HTML-Academy"></a>
-       </div>
+        <a href="https://htmlacademy.ru" class="page-footer__text">Разработано</a>
       </footer>
   </body>
 </html>
