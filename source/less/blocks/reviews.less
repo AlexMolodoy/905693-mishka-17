@@ -85,6 +85,7 @@
   .reviews {
     padding: 75px 52px 122px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -97,6 +98,7 @@
       top: 0;
       z-index: -1;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -144,17 +146,18 @@
     margin: 0;
     right: 52px;
     top: 79px;
-
   }
 }
 
-@media (min-width: @desktop-width) { 
+@media (min-width: @desktop-width) {
   .reviews {
     padding: 80px 52px 169px 225px;
+
     &::before {
       left: 52px;
       top: 0;
     }
+
     &::after {
       width: 1052px;
       left: 52px;

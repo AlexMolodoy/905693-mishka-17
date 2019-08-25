@@ -21,6 +21,7 @@
   color: #63d1bb;
   margin: 0;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -50,15 +51,14 @@
 }
 
 .order__text-light--top-position {
-  margin: 1px 0 34px 0; 
+  margin: 1px 0 34px 0;
   padding: 0;
 }
 
 .order__text-light--position {
-  margin: 1px 0 34px 0; 
+  margin: 1px 0 34px 0;
   padding: 0;
 }
-
 
 .order__text {
   padding: 0;
@@ -69,6 +69,7 @@
   font-weight: bold;
   line-height: 1.06;
   color: black;
+
   &::before {
     left: -3px;
     position: absolute;
@@ -76,6 +77,7 @@
     height: 36px;
     border: solid 2px #444444;
   }
+
   &::after {
     display: none;
     position: absolute;
@@ -92,7 +94,7 @@
   opacity: 0.3;
 }
 
-.order-form__round:checked+.order__text--radio-round {
+.order-form__round:checked + .order__text--radio-round {
   &::after {
     display: block;
   }
@@ -101,10 +103,12 @@
 .order__text--radio-round {
   position: relative;
   padding-left: 62px;
+
   &::before {
     content: "";
     border-radius: 50%;
   }
+
   &::after {
     content: "";
     width: 16px;
@@ -116,7 +120,7 @@
   }
 }
 
-.order-form__box:checked+.order__text--box-round {
+.order-form__box:checked + .order__text--box-round {
   &::after {
     display: block;
   }
@@ -125,11 +129,13 @@
 .order__text--box-round {
   position: relative;
   padding-left: 62px;
+
   &::before {
     content: "";
     top: -12px;
   }
-  &:after {
+
+  &::after {
     content: "";
     width: 22px;
     height: 25px;
@@ -166,7 +172,7 @@
 }
 
 .order__text-light--form {
-  margin-top: 9px; 
+  margin-top: 9px;
   margin-bottom: 34px;
 }
 
@@ -220,12 +226,12 @@
   }
 
   .order-form__item:nth-child(2) {
-    background-color: #f1f1f1; 
-    padding-bottom: 14px;   
+    background-color: #f1f1f1;
+    padding-bottom: 14px;
   }
 
   .order-form__item:nth-child(4) {
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
     flex-direction: column;
     justify-content: space-between;
     height: 130px;
@@ -234,6 +240,7 @@
 
   .order-form__item-head {
     width: 166px;
+
     &::before {
       display: none;
     }
@@ -249,6 +256,7 @@
 
   .order__text {
     font-size: 19px;
+
     &::before {
       width: 46px;
       height: 46px;
@@ -256,9 +264,12 @@
   }
 
   .order__text--radio-round {
+    // padding: 0;
+
     &::before {
       top: -18px;
     }
+
     &::after {
       width: 20px;
       height: 20px;
@@ -266,10 +277,11 @@
       left: 12px;
     }
   }
-  
+
   .order__text--box-round {
     width: 180px;
     padding-bottom: 56px;
+
     &::before {
       top: -18px;
     }
@@ -296,8 +308,8 @@
   }
 
   .order__text-light--position {
-    width: 360px; 
-    padding:0;
+    width: 360px;
+    padding: 0;
     margin-top: 24px;
     margin-bottom: 0;
   }

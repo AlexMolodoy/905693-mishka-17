@@ -33,6 +33,7 @@
 
 .cat-list__item-text--lamp {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -48,9 +49,9 @@
   }
 }
 
-
 .cat-list__item-text--lego {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -70,18 +71,16 @@
   .cat-list {
     display: flex;
     padding: 0 52px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .cat-list__item:nth-child(1) {
     padding: 35px 187px 38px 39px;
   }
-  
+
   .cat-list__item:nth-child(2) {
     padding: 35px 204px 38px 36px;
   }
-
-  
 }
 
 @media (min-width: @desktop-width) {
@@ -99,7 +98,7 @@
       left: 412px;
     }
   }
-  
+
   .cat-list__item:nth-child(2) {
     padding: 35px 395px 38px 36px;
   }

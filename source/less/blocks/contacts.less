@@ -41,23 +41,25 @@
   color: #444444;
   font-size: 15px;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
     bottom: 0;
-    width: 200px; 
+    width: 200px;
     height: 1px;
     background-color: #46c1ae;
   }
 }
 
 .contacts__item-address--link:hover,
-.contacts__item-address--link:hover {
+.contacts__item-address--link:focus {
   color: #46c1ae;
 }
 
 .contacts__item-address--link:active {
   color: rgba(70, 193, 174, 0.3);
+
   &::before {
     opacity: 0.3;
   }
@@ -177,6 +179,6 @@
   }
 
   .contacts__feedback {
-    margin: 60px 0 0 0 ;
+    margin: 60px 0 0;
   }
 }
