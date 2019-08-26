@@ -87,32 +87,48 @@
 @media (min-width: @desktop-width) {
   .tech-proc {
     width: 1049px;
-    // margin-bottom: 300px;
     position: relative;
     display: flex;
     flex-direction: column;
-  }
-
-  .tech-proc__img {
-    display: none;
-  }
-
-  .tech-proc__text {
-    width: 222px;
-    font-size: 15px;
-    // margin-left: 750px;
-    // margin-top: -350px;
+    align-items: flex-end;
   }
 
   .tech-proc__head {
     font-size: 20px;
-    padding: 0;
-    // margin-left: 750px;
+    width: 140px;
+    padding: 100px 145px 0 0;
+  }
+
+  .tech-proc__head--camera {
+    position: relative;
+  
+    &::before {
+      left: 0px;
+      top: 47px;
+    }
+  }
+
+  .tech-proc__img {
+    left: 0;
+  }
+
+  .tech-proc__text {
+    width: 240px;
+    font-size: 15px;
+  }
+
+  .tech-proc__head--camera {
+    position: relative;
+  
+    &::before {
+      left: 0px;
+      top: 47px;
+    } 
   }
 
   .tech-proc__button {
-    width: 230px;
+    width: 226px;
     height: 52px;
-    // margin-left: 750px;
+    margin: 48px 57px 60px auto;
   }
 }
