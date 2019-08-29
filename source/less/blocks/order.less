@@ -46,7 +46,6 @@
 
 .order-form__content--color {
   padding: 23px 0 34px 0;
-  height: 344px;
   justify-content: space-between;
 }
 
@@ -85,12 +84,12 @@
   }
 }
 
-.order__text::before:hover,
-.order__text::before:focus {
+.order__text:hover::before,
+.order__text:focus::before {
   border: solid 2px #62d1ba;
 }
 
-.order__text::before:active {
+.order__text:active::before {
   opacity: 0.3;
 }
 
@@ -158,7 +157,6 @@
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 1.06;
-  color: rgba(68, 68, 68, 0.3);
   border: none;
 }
 
@@ -174,6 +172,27 @@
 .order__text-light--form {
   margin-top: 9px;
   margin-bottom: 34px;
+  position: relative;
+}
+
+.order-form__input-container {
+  position: relative;
+}
+
+.order-form__icon {
+  height: 24px;
+  width: 25px;
+  top: 25px;
+  opacity: 0.2;
+  right: 8px;
+  position: absolute;
+}
+
+.order-form__icon:hover,
+.order-form__icon:focus,
+.order-form__icon:active {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 .order__text-light--add-table {
@@ -290,7 +309,6 @@
   }
 
   .order-form__content--row {
-    width: 499px;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -368,13 +386,21 @@
     padding: 0 0 15px;
   }
 
+  .order__text--box-round {
+    padding-bottom: 60px;
+  }
+
   .order__text-light--top-position {
-    margin: -17px 0 0 0;
-    width: 625px;
+    margin: -32px 0 0 71px;
+    width: 620px;
+  }
+
+  .order__text-light--position {
+    width: 570px;
   }
 
   .order__text--top-padding {
-    padding: 17px 25px 0 0;
+    padding: 0px 27px 0 0;
   }
 
   .order-form__item-head {
@@ -384,15 +410,16 @@
   .order-form__content--color {
     width: 800px;
   }
-  // .order__text-light {
-  //   width: 626px;
-  // }
 
-  // .order-form__feedback-container {
-  //   flex-direction: row-reverse;
-  //   width: 700px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   justify-content: space-between;
-  // }
+  .order__text-light--form {
+    width: 700px;
+  }
+
+  .order__text-light--add-table {
+    width: 700px;
+  }
+
+  .order-form__feedback-container {
+    padding: 0 225px;
+  }
 }
