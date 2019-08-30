@@ -1,17 +1,87 @@
 .page-footer {
-  width: 320px;
-  height: 160px;
+  padding: 25px 30px;
+  margin-top: 39px;
   background-color: #f1f1f1;
+}
+
+.page-footer__social {
+  list-style: none;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 62px 27px 57px;
+  margin: 0;
+}
+
+.page-footer__social-nets {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+.page-footer__social-insta {
+  fill: #444444;
+}
+
+.page-footer__social-color:hover,
+.page-footer__social-color:focus {
+  fill: #46c1ae;
+}
+
+.page-footer__social-color:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+.page-footer__social--underline {
+  border-bottom: #ececec 1px solid;
+}
+
+.page-footer__text {
+  text-decoration: none;
+  display: block;
+  padding: 28px 0 0 39px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 0.95;
+  color: black;
+  position: relative;
+}
+
+.page-footer__text:active {
+  opacity: 0.3;
 }
 
 .page-footer__logo {
   display: none;
 }
 
+.page-footer__academy {
+  position: absolute;
+  height: 34px;
+  width: 27px;
+  fill: #63d1bb;
+  top: 18px;
+  right: 30px;
+}
+
+.page-footer__academy:hover,
+.page-footer__academy:focus {
+  fill: #46c1ae;
+}
+
+.page-footer__academy:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
-    width: 768px;
     display: flex;
+    padding: 51px 107px 58px 50px;
+    justify-content: space-between;
   }
 
   .page-footer__logo {
@@ -19,10 +89,42 @@
     width: 102px;
     height: 32px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .page-footer {
-    width: 1200px;
+  .page-footer__social {
+    padding: 0;
+    
+  }
+
+  .page-footer__social--underline {
+    border-bottom: none;
+  }
+
+  .page-footer__text {
+    padding: 0;
+
+    &::before {
+      left: 150px;
+      top: -6px;
+    }
+  }
+
+  .page-footer__logo-color {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-footer__logo-color:hover, 
+  .page-footer__logo-color:focus {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo-color:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
+  .page-footer__academy {
+    top: -6px;
+    right: -57px;
   }
 }
