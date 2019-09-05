@@ -1,10 +1,11 @@
 .about-us {
-  padding: 76px 38px 0 30px;
+  padding: 67px 38px 0 29px;
 }
 
 .about-us__head {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 25px;
+  padding-bottom: 12px;
   font-weight: bold;
   line-height: 1.2;
   color: black;
@@ -18,7 +19,7 @@
 }
 
 .about-us__item {
-  margin-top: 88px;
+  margin-top: 80px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -36,8 +37,9 @@
 
 .about-us__item--flower {
   position: relative;
-  // padding-right: 116px;
   &::before {
+    top: -55px;
+    left: 10px;
     width: 175px;
     height: 37px;
     background-image: url("../img/icon-feature-flower.svg");
@@ -48,6 +50,7 @@
   position: relative;
   // padding-right: 90px;
   &::before {
+    left: 3px;
     width: 200px;
     height: 38px;
     background-image: url("../img/icon-feature-money.svg");
@@ -58,6 +61,8 @@
   position: relative;
   // padding-right: 110px;
   &::before {
+    left: 10;
+    top: -55px;
     width: 181px;
     height: 38px;
     background-image: url("../img/icon-feature-heart.svg");
@@ -96,7 +101,7 @@
 
 @media (min-width: @tablet-width) {
   .about-us {
-    padding: 60px 52px 82px;
+    padding: 64px 45px 78px;
   }
 
   .about-us__head {
@@ -114,13 +119,17 @@
 
   .about-us__item {
     font-size: 20px;
-    margin-top: 100px;
+    // margin-bottom: 90px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-us {
-    padding: 70px 279px 89px 225px;
+    padding: 75px 270px 89px 220px;
+  }
+
+  .about-us__head {
+    font-size: 53px;
   }
 
   .about-us__item {

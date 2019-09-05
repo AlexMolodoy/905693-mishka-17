@@ -1,5 +1,5 @@
 .reviews {
-  padding: 61px 0 0 30px;
+  padding: 65px 0 0 30px;
 }
 
 .reviews__head {
@@ -14,7 +14,7 @@
 
 .reviews__text {
   margin: 0;
-  padding: 28px 36px 0 0;
+  padding: 23px 34px 0 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 2;
@@ -23,7 +23,7 @@
 
 .reviews__hero {
   margin: 0;
-  padding: 35px 0 0 0;
+  padding: 26px 0 5px 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -42,7 +42,7 @@
 
 .reviews-nav {
   display: flex;
-  padding: 36px 0 0 0;
+  padding: 30px 0 0 0;
 }
 
 .reviews__control {
@@ -51,7 +51,7 @@
   border: solid 1px #ececec;
   background-repeat: no-repeat;
   background-position: 39px;
-  width: 129px;
+  width: 130px;
 }
 
 .reviews__control:hover,
@@ -83,7 +83,7 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    padding: 75px 52px 122px;
+    padding: 75px 47px 122px;
     position: relative;
 
     &::before {
@@ -117,13 +117,19 @@
     font-size: 43px;
   }
 
+  .reviews__social {
+    padding-top: 5px;
+  }
+
   .reviews__text {
-    padding: 65px 29px 68px 0;
+    padding: 50px 29px 63px 3px;
     font-size: 17px;
+    line-height: 1.76;
   }
 
   .reviews-nav {
     padding: 0;
+    margin-right: 20px;
   }
 
   .reviews__hero {
@@ -137,11 +143,13 @@
 
   .reviews__control {
     border: none;
+    width: 90px;
+    padding: 0;
   }
 
   .reviews__feedback {
-    width: 175px;
-    height: 52px;
+    width: 169px;
+    height: 48px;
     position: absolute;
     margin: 0;
     right: 52px;
@@ -151,11 +159,11 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    padding: 80px 52px 169px 225px;
+    padding: 60px 52px 169px 220px;
 
     &::before {
       left: 52px;
-      top: 0;
+      top: -7px;
     }
 
     &::after {
@@ -164,5 +172,34 @@
       bottom: 0;
       z-index: -1;
     }
+  }
+
+  .reviews__head {
+    font-size: 53px;
+  }
+
+  .reviews__text {
+    padding: 45px 103px 43px 5px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .reviews__hero,
+  .reviews__social {
+    padding-left: 5px;
+  }
+
+  .reviews-nav {
+    padding: 0;
+    margin-right: 15px;
+  }
+
+  .reviews__control {
+    border: none;
+    width: 90px;
+  }
+
+  .reviews__feedback {
+    top: 70px;
   }
 }
