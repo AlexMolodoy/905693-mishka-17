@@ -8,7 +8,8 @@
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;
-  color: #444444;
+  text-align: center;
+  color: #000000;
   margin: 0;
 }
 
@@ -17,12 +18,12 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 93px 39px 193px 39px;
-  margin-top: -12px;
+  margin-top: -18px;
 }
 
 .main-tag__text--background {
   background-color: #f1f1f1;
-  padding: 76px 35px 80px;
+  padding: 70px 27px 75px;
 }
 
 .main-tag__text-p {
@@ -34,20 +35,22 @@
 }
 
 .main-tag__text-p--position {
-  padding: 29px 48px 30px 30px;
+  padding: 23px 48px 25px 30px;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .main-tag__text {
     font-size: 43px;
+    line-height: 1.16;
     text-align: center;
   }
 
   .main-tag__text--img {
     background-image: url("../img/hero-tablet@1x.jpg");
-    padding: 161px 130px 490px;
+    padding: 155px 130px 490px;
     position: relative;
+    top: 15px;
 
     &::before {
       content: "";
@@ -56,16 +59,16 @@
       background-repeat: no-repeat;
       background-position: 0;
       left: 0;
-      z-index: 5;
+      z-index: 5000;
+      bottom: -7px;
       height: 30px;
       width: 770px;
-      bottom: 0;
     }
   }
 
   .main-tag__text--background {
     position: relative;
-    padding: 104px 170px 90px;
+    padding: 93px 170px 90px;
 
     &::before {
       position: absolute;
@@ -86,23 +89,28 @@
   }
 
   .main-tag__text-p--position {
-    padding: 80px 105px 0 51px;
+    padding: 65px 65px 0 51px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-tag__text {
     font-size: 53px;
-    padding: 105px 330px 111px;
   }
 
-  .main-tag__text-p {
-    padding: 112px 225px 0;
+  .main-tag__text--background {
+    padding: 90px 160px 115px;
+  }
+
+  .main-tag__text-p--position {
+    padding: 110px 225px 0;
   }
 
   .main-tag__text--img {
     margin: 0;
-    padding: 161px 250px 451px;
+    top: 15px;
+    line-height: 1.08;
+    padding: 135px 250px 451px;
   }
 
   .main-tag__main-text {

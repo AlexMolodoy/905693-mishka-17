@@ -9,8 +9,12 @@
   </head>
   <body>
       <header class="page-header">
-          <a href="i#" class="page-header__logo">
-              <img src="img/logo-mobile.svg" width="86" height="35" alt="logo-mishka">
+          <a href="index.html" class="page-header__logo">
+              <picture>
+                <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                <img src="img/logo-mobile.svg" class="page-header__img" width="149" height="72" alt="logo-mishka">
+              </picture>
           </a>
           <nav class="main-nav">
             <button class="main-nav__button" type="button" aria-label="Main menu"></button>
@@ -59,7 +63,7 @@
         </div>
         <div class="product__container">
           <div class="product__container-text">
-            <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <ul class="product__settings settings">
                 <li class="settings__item">
                   <span class="settings__item-width">Цвет:</span>
@@ -76,7 +80,11 @@
             </ul>
           </div>
           <div class="product__container-img">
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="triple-set">
+              <picture>
+                  <source srcset="img/triple-set-desktop@1x.jpg" media="(min-width: 1150px)">
+                  <source srcset="img/triple-set-tablet@1x.jpg" media="(min-width: 768px)">
+                  <img src="img/triple-set-mobile@1x.jpg" class="product__container-set" width="260" height="315" alt="triple-set">
+              </picture>
           </div>
           <div class="product__container-value">
             <p class="product__value">Цена: 990 руб.</p>
@@ -121,7 +129,7 @@
             <button class="reviews__control reviews__control--next" type="button"></button>
           </div>
         </div>
-        <a href="#" class="button reviews__feedback">Написать</a>
+        <a href="#" class="button reviews__feedback">НАПИСАТЬ</a>
       </section>
       <section class="contacts">
         <div class="contacts__container">
@@ -133,12 +141,16 @@
               </li>
               <li class="contacts__item">
                 <span class="contacts__item-width">адрес:</span>
-                <span class="contacts__item-address">г. Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</span>
+                <span class="contacts__item-address">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</span>
               </li>
           </ul>
         </div>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" height="457" width="322" alt="map-spb">
+            <picture>
+                <source srcset="img/map-desktop@1x.jpg" media="(min-width: 1150px)">
+                <source srcset="img/map-tablet@1x.jpg" media="(min-width: 768px)">
+                <img src="img/map-mobile@1x.jpg" class="contacts__map-adaptive" height="457" width="322" alt="map-spb">
+            </picture>
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="318" height="453" class="real-map" allowfullscreen></iframe> -->
         </div>
         <a class="button contacts__feedback">НАПИШИТЕ НАМ</a>
