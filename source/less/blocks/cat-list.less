@@ -2,7 +2,6 @@
   list-style: none;
   padding: 0;
   position: relative;
-  margin-top: -73px;
   margin-bottom: 0;
   z-index: 0;
 }
@@ -14,6 +13,7 @@
 .cat-list__item:nth-child(1) {
   background-color: #63d1bb;
   padding: 28px 185px 28px 29px;
+  margin-top: -73px;
 }
 
 .cat-list__item:nth-child(2) {
@@ -23,7 +23,8 @@
 
 .cat-list__item:hover:nth-child(1),
 .cat-list__item:focus:nth-child(1) {
-  padding: 30px 185px 35px 29px;
+  padding: 28px 185px 33px 29px;
+  margin-top: -78px;
 }
 
 .cat-list__item-text + .cat-list__item:active:nth-child(1) {
@@ -32,7 +33,8 @@
 
 .cat-list__item:hover:nth-child(2),
 .cat-list__item:focus:nth-child(2) {
-  padding: 30px 185px 35px 29px;
+  padding: 28px 202px 33px 29px;
+  margin-top: -5px;
 }
 
 .cat-list__item-text + .cat-list__item:active:nth-child(2) {
@@ -90,15 +92,24 @@
   .cat-list {
     display: flex;
     padding: 0 52px;
-    margin-top: -100px;
   }
 
   .cat-list__item:nth-child(1) {
     padding: 35px 187px 38px 39px;
+    margin-top: -100px;
   }
 
   .cat-list__item:nth-child(2) {
     padding: 35px 204px 38px 36px;
+    margin-top: -100px;
+  }
+
+  .cat-list__item:hover:nth-child(1),
+  .cat-list__item:focus:nth-child(1),
+  .cat-list__item:hover:nth-child(2),
+  .cat-list__item:focus:nth-child(2)  {
+    padding-bottom: 43px;
+    margin-top: -95px;
   }
 }
 
