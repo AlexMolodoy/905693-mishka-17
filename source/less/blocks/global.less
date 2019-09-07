@@ -40,14 +40,38 @@ body {
   overflow: hidden;
 }
 
+.zigzag__underline{
+  margin-left: -32px;
+  height: 6px;
+  width: 100%;
+  margin: 0 auto;
+  background-size: 100%;
+  padding: 45px 0 0 0;
+}
+
 @media (min-width: @tablet-width) {
   body {
     width: 768px;
+  }
+
+  .zigzag__underline{
+    // width: 768px;
+    height: 15px;
+    object-fit: contain;
+    margin-left: -52px;
   }
 }
 
 @media (min-width: @desktop-width) {
   body {
     width: 1150px;
+  }
+
+  .zigzag__underline{
+    width: 1050px;
+    height: 23px;
+    object-fit: contain;
+    margin-left: -175px;
+    margin-top: 30px;
   }
 }

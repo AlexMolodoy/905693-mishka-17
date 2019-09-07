@@ -11,7 +11,11 @@
   height: 30px;
   border-bottom: 1px solid #ececec;
   list-style: none;
-  padding: 5px 20px 0 0;
+  padding: 9px 20px 0 0;
+}
+
+.settings__item--spec {
+  padding-left: 2px; 
 }
 
 .settings__item-width {
@@ -21,12 +25,20 @@
 
 .settings__item-allignment {
   display: block;
-  margin-left: 31px;
+  margin-left: 27px;
 }
 
 @media (min-width: @tablet-width) {
   .settings__item:nth-child(2) {
     margin-bottom: 5px;
     padding-top: 10px;
+  }
+
+  .settings__item--spec {
+    padding-left: 3px; 
+  }
+
+  .settings__item--top {
+    padding-top: 2px;
   }
 }

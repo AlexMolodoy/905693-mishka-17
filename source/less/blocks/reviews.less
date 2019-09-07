@@ -23,7 +23,7 @@
 
 .reviews__hero {
   margin: 0;
-  padding: 26px 0 5px 0;
+  padding: 27px 0 5px 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -73,6 +73,7 @@
 
 .reviews__feedback {
   margin: 38px 0 0;
+  width: 256px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -83,7 +84,7 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    padding: 75px 47px 122px;
+    padding: 75px 47px 0;
     position: relative;
 
     &::before {
@@ -98,19 +99,6 @@
       top: 0;
       z-index: -1;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
-      background-position: 0;
-      width: 771px;
-      height: 30px;
-      left: -50px;
-      bottom: 0;
-      z-index: -1;
-    }
   }
 
   .reviews__head {
@@ -118,33 +106,34 @@
   }
 
   .reviews__social {
-    padding-top: 5px;
+    padding: 0 0 0 2px;
   }
 
   .reviews__text {
-    padding: 50px 29px 63px 3px;
+    padding: 50px 28px 31px 3px;
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 1.77;
   }
 
   .reviews-nav {
     padding: 0;
-    margin-right: 20px;
+    margin: 30px 19px 0 0;
   }
 
   .reviews__hero {
-    padding: 0;
+    padding-left: 3px;
+    letter-spacing: 0.7px;
   }
 
   .reviews__hero-controls {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 70px;
   }
 
   .reviews__control {
     border: none;
     width: 90px;
-    padding: 0;
   }
 
   .reviews__feedback {
@@ -159,7 +148,7 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    padding: 60px 52px 169px 220px;
+    padding: 61px 52px 0 220px;
 
     &::before {
       left: 52px;
@@ -179,12 +168,15 @@
   }
 
   .reviews__text {
-    padding: 47px 103px 43px 5px;
+    padding: 47px 103px 13px 5px;
     font-size: 17px;
     line-height: 1.76;
   }
 
-  .reviews__hero,
+  .reviews__hero {
+    padding-left: 5px;
+    letter-spacing: 0.1px;
+  }
   .reviews__social {
     padding-left: 5px;
   }
