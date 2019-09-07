@@ -82,23 +82,24 @@
   color: #444444;
 }
 
+.reviews__photo {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     padding: 75px 47px 0;
     position: relative;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/review@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 0;
-      height: 457px;
-      width: 350px;
-      left: -50px;
-      top: 0;
-      z-index: -1;
-    }
+  .reviews__photo {
+    display: block;
+    position: absolute;
+    height: 457px;
+    width: 350px;
+    left: 0;
+    top: 0;
+    z-index: -1;
   }
 
   .reviews__head {

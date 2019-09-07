@@ -9,6 +9,7 @@
   position: absolute;
   top: -47px;
   left: 269px;
+  display: none;
   background-image: url("../img/icon-menu-open.svg");
   background-color: white;
   border: none;
@@ -25,6 +26,25 @@
   display: none;
   padding: 0;
   margin: 0;
+}
+
+.main-nav__list--close {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 269px;
+  display: none;
+  background-image: url("../img/icon-menu-close.svg");
+  background-color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__list--open {
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
