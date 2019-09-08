@@ -57,6 +57,7 @@
   .main-tag__text--img {
     background-image: url("../img/hero-tablet@1x.jpg");
     padding: 152px 130px 490px;
+    background-size: auto 100%;
     position: relative;
     margin: -15px;
     top: 15px;
@@ -65,7 +66,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .main-tag__text--img {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: auto 746px;
+      background-size: auto 100%;
     }
   }
 
@@ -99,15 +100,20 @@
 
   .main-tag__text--img {
     background-image: url("../img/hero-desktop@1x.jpg");
-    margin-top: 8px;
-    top: 15px;
     line-height: 1.08;
-    padding: 130px 250px 451px;
+    background-size: 1150px auto;
+    margin-top: -8px;
+    top: 0;
+    padding-top: 160px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .main-tag__text--img {
       background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+      margin-top: -8px;
+      top: 0;
+      padding-top: 160px;
     }
   }
 
