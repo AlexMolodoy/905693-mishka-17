@@ -12,19 +12,19 @@
 
 .cat-list__item:nth-child(1) {
   background-color: #63d1bb;
-  padding: 28px 185px 28px 29px;
-  margin-top: -73px;
+  padding: 27px 187px 28px 29px;
+  margin-top: -72px;
 }
 
 .cat-list__item:nth-child(2) {
   background-color: #56c3b2;
-  padding: 28px 202px 28px 29px;
+  padding: 30px 210px 28px 29px;
 }
 
 .cat-list__item:hover:nth-child(1),
 .cat-list__item:focus:nth-child(1) {
-  padding: 28px 185px 33px 29px;
-  margin-top: -78px;
+  padding-bottom: 33px;
+  margin-top: -77px;
 }
 
 .cat-list__item-text + .cat-list__item:active:nth-child(1) {
@@ -33,7 +33,7 @@
 
 .cat-list__item:hover:nth-child(2),
 .cat-list__item:focus:nth-child(2) {
-  padding: 28px 202px 33px 29px;
+  padding-bottom: 33px;
   margin-top: -5px;
 }
 
@@ -59,13 +59,13 @@
     content: "";
     position: absolute;
     left: 215px;
-    top: -7px;
+    top: -3px;
     opacity: 0.5;
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: 0;
     width: 40px;
-    height: 62px;
+    height: 60px;
     object-fit: contain;
   }
 }
@@ -88,6 +88,10 @@
   }
 }
 
+.underline {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .cat-list {
     display: flex;
@@ -95,12 +99,12 @@
   }
 
   .cat-list__item:nth-child(1) {
-    padding: 35px 187px 38px 39px;
+    padding: 29px 187px 38px 34px;
     margin-top: -100px;
   }
 
   .cat-list__item:nth-child(2) {
-    padding: 35px 204px 38px 36px;
+    padding: 29px 204px 38px 36px;
     margin-top: -100px;
   }
 
@@ -109,18 +113,65 @@
   .cat-list__item:hover:nth-child(2),
   .cat-list__item:focus:nth-child(2) {
     padding-bottom: 43px;
-    margin-top: -95px;
+    margin-top: -105px;
+  }
+
+  .cat-list__item-text {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .cat-list__item-text--lamp {
+    position: relative;
+
+    &::before {
+      left: 221px;
+      top: 0;
+    }
+  }
+
+  .cat-list__item-text--lego {
+    position: relative;
+
+    &::before {
+      left: 204px;
+      top: 0;
+    }
+  }
+
+  .underline {
+    display: block;
+    height: 34px;
+    position: relative;
+    top: 10px;
+    z-index: 5000;
+    background-size: 100%;
+    fill: white;
+    width: 100%;
+    margin-top: -30px;
+    margin-left: 2px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .cat-list__item {
-    width: 525px;
-    margin-top: 24px;
+  .cat-list {
+    margin-top: 36px;
   }
 
   .cat-list__item:nth-child(1) {
-    padding: 35px 377px 38px 39px;
+    padding: 30px 377px 38px 35px;
+  }
+
+  .underline {
+    display: block;
+    height: 34px;
+    position: relative;
+    top: 10px;
+    z-index: 5000;
+    background-size: 100%;
+    fill: white;
+    margin-top: -30px;
+    margin-left: 20px;
   }
 
   .cat-list__item-text--lamp {
@@ -130,7 +181,14 @@
   }
 
   .cat-list__item:nth-child(2) {
-    padding: 35px 395px 38px 36px;
+    padding: 30px 395px 38px 36px;
+  }
+
+  .cat-list__item:hover:nth-child(1),
+  .cat-list__item:focus:nth-child(1),
+  .cat-list__item:hover:nth-child(2),
+  .cat-list__item:focus:nth-child(2) {
+    padding-bottom: 43px;
   }
 
   .cat-list__item-text--lego {
