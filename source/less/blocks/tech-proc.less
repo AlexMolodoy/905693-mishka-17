@@ -2,6 +2,7 @@
   border: solid 1px #ececec;
   width: 258px;
   margin: 0 30px 58px;
+  position: relative;
 }
 
 .tech-proc__head {
@@ -54,6 +55,35 @@
     background-repeat: no-repeat;
     background-position: 0;
   }
+}
+
+.tech-proc__btn-cont {
+  position: relative;
+}
+
+.tech-proc__btn {
+  width: 101px;
+  height: 77px;
+}
+
+.tech-proc__btn-pos {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.tech-proc__btn-pos:hover,
+.tech-proc__btn-pos:focus {
+  width: 121px;
+  height: 92px;
+}
+
+.tech-proc__btn-pos:active {
+  width: 81px;
+  height: 62px;
+  object-fit: contain;
+  opacity: 0.3;
 }
 
 .tech-proc__button {
@@ -110,6 +140,12 @@
     width: 580px;
     height: 48px;
   }
+
+  .tech-proc__btn {
+    position: absolute;
+    left: 275px;
+    top: 190px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -154,5 +190,11 @@
     width: 226px;
     height: 46px;
     margin: 47px 57px 60px auto;
+  }
+
+  .tech-proc__btn {
+    position: absolute;
+    left: 282px;
+    top: 187px;
   }
 }

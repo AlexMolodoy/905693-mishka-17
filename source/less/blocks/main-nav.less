@@ -29,7 +29,7 @@
   margin: 0;
 }
 
-.main-nav__list--close {
+.main-nav__close {
   content: "";
   position: absolute;
   top: -50px;
@@ -44,8 +44,22 @@
   margin: 0;
 }
 
-.main-nav__list--open {
+.main-nav__open {
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .nojs .main-nav__list {
+    display: block;
+  }
+
+  .nojs .main-nav__list--open {
+    display: none;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
