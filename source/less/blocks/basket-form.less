@@ -9,6 +9,7 @@
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   background-color: white;
   z-index: 10;
+  // background: rgba(0, 0, 0, 0.25)
 }
 
 .basket-form__open {
@@ -48,6 +49,7 @@
 }
 
 .basket-form__size {
+  display: block;
   width: 78px;
   border: solid 2px #444444;
   opacity: 0.1;
@@ -59,12 +61,12 @@
   flex-shrink: 0;
 }
 
-.basket-form__size-item:hover,
-.basket-form__size-item:focus {
+.basket-form__size:hover,
+.basket-form__size:focus {
   opacity: 0.3;
 }
 
-.basket-form__size-item:checked {
+.basket-form__size-check:checked + .basket-form__size {
   border: solid 2px #62d1ba;
 }
 

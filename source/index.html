@@ -100,22 +100,22 @@
           </g>
         </svg>
       </section>
-      <section class="basket-form">
-        <h2 class="basket-form__head">Добавить в корзину</h2>
-        <p class="basket-form__text">Выберите размер:</p>
-        <ul class="basket-form__size-list">
-          <li class="basket-form__size-item">
-            <input type="radio" class="visually-hidden" id="s-size" name="radio" value="0">
-            <label for="s-size" class="basket-form__size">S</label></li>
-          <li class="basket-form__size-item">
-              <input type="radio" class="visually-hidden" id="m-size" name="radio" value="0">
-              <label for="m-size" class="basket-form__size">M</label></li>
-          <li class="basket-form__size-item">
-              <input type="radio" class="visually-hidden" id="l-size" name="radio" value="0">
-              <label for="l-sizey" class="basket-form__size">L</label></li>
-        </ul>
-        <button class="basket-form__button button">Добавить</button>
-      </section>
+        <section class="basket-form">
+          <h2 class="basket-form__head">Добавить в корзину</h2>
+          <p class="basket-form__text">Выберите размер:</p>
+          <ul class="basket-form__size-list">
+            <li class="basket-form__size-item">
+              <input type="radio" class="visually-hidden basket-form__size-check" id="s-size" name="radio" value="0">
+              <label for="s-size" class="basket-form__size">S</label></li>
+            <li class="basket-form__size-item">
+                <input type="radio" class="visually-hidden basket-form__size-check" id="m-size" name="radio" value="0">
+                <label for="m-size" class="basket-form__size">M</label></li>
+            <li class="basket-form__size-item">
+                <input type="radio" class="visually-hidden basket-form__size-check" id="l-size" name="radio" value="0">
+                <label for="l-size" class="basket-form__size">L</label></li>
+          </ul>
+          <button class="basket-form__button button">Добавить</button>
+        </section>
       <div class="about-us">
         <h2 class="about-us__head">Коротко о нас:</h2>
         <ul class="about-us__list">
@@ -175,7 +175,7 @@
                 <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" class="contacts__map-adaptive" height="457" width="322" alt="map-spb">
             </picture>
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="318" height="453" class="real-map" allowfullscreen></iframe> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="318" height="453" class="real-map" allowfullscreen></iframe>
         </div>
         <a href="write-us.html" class="button contacts__feedback">НАПИШИТЕ НАМ</a>
       </section>
@@ -224,5 +224,6 @@
         </a>
       </footer>
       <script src="js/script.js"></script>
+      <script src="js/picturefill.min.js"></script>
   </body>
 </html>
