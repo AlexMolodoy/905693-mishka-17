@@ -18,10 +18,6 @@ close_img.addEventListener("click", function(evt) {
     close_img.classList.remove("main-nav__open");
     open_img.classList.add("main-nav__open");
 });
-prod_but.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  prod_basket.classList.add("basket-form__open");
-});
 if(prod_but){
   prod_but.addEventListener("click", function(evt) {
     evt.preventDefault();

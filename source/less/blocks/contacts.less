@@ -77,6 +77,7 @@
 }
 
 .real-map {
+  border: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -152,10 +153,12 @@
 
   .real-map {
     position: absolute;
-    width: 768px;
+    // width: 768px;
     height: 457px;
-    left: 0;
+    // left: 0;
     top: 0;
+    width: 100vw;
+    left: calc(0px - (100vw - 100%) / 2);
   }
 
   .contacts__feedback {
