@@ -6,8 +6,6 @@
 }
 
 .tech-proc__head {
-  // margin-top: 24px;
-  // margin-left: 89px;
   margin: 24px 0 26px 89px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
@@ -59,9 +57,12 @@
 
 .tech-proc__btn-cont {
   position: relative;
+  background: none;
+  border: none;
 }
 
 .tech-proc__btn {
+  position: static;
   width: 101px;
   height: 77px;
 }
@@ -75,14 +76,11 @@
 
 .tech-proc__btn-pos:hover,
 .tech-proc__btn-pos:focus {
-  width: 121px;
-  height: 92px;
+  transform: translate(-50%, -50%) scale(1.2, 1.2);
 }
 
 .tech-proc__btn-pos:active {
-  width: 81px;
-  height: 62px;
-  object-fit: contain;
+  transform: translate(-50%, -50%) scale(0.8, 0.8);
   opacity: 0.3;
 }
 
@@ -126,7 +124,8 @@
     width: 666px;
     height: 455px;
     top: 0;
-    position: absolute;
+    left: 0;
+    position: relative;
   }
 
   .tech-proc__text {
@@ -142,9 +141,12 @@
   }
 
   .tech-proc__btn {
-    position: absolute;
     left: 275px;
     top: 190px;
+  }
+
+  .tech-proc__btn-cont {
+    position: absolute;
   }
 }
 

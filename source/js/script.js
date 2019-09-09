@@ -22,3 +22,19 @@ prod_but.addEventListener("click", function(evt) {
   evt.preventDefault();
   prod_basket.classList.add("basket-form__open");
 });
+if(prod_but){
+  prod_but.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    prod_basket.classList.add("basket-form__open");
+  });
+}
+
+var catalog_items = document.querySelectorAll('.inner-cat__item')
+if(catalog_items){
+  for(var i=0; i<catalog_items.length; i++){
+    catalog_items[i].addEventListener('click', function(evt) {
+      evt.preventDefault();
+      prod_basket.classList.add("basket-form__open");
+    })
+  }
+}
