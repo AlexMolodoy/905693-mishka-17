@@ -43,7 +43,11 @@
 }
 
 .basket-form__size-item {
+  position: relative;
   list-style: none;
+}
+
+.basket-form__size {
   width: 78px;
   border: solid 2px #444444;
   opacity: 0.1;
@@ -52,6 +56,7 @@
   line-height: 2;
   text-align: center;
   color: #444444;
+  flex-shrink: 0;
 }
 
 .basket-form__size-item:hover,
@@ -59,7 +64,7 @@
   opacity: 0.3;
 }
 
-.basket-form__size-item:active {
+.basket-form__size-item:checked {
   border: solid 2px #62d1ba;
 }
 
@@ -84,7 +89,7 @@
     padding: 0 0 32px;
   }
 
-  .basket-form__size-item {
+  .basket-form__size{
     width: 108px;
   }
 
