@@ -128,16 +128,19 @@
   }
 
   .about-us__list {
+    height: auto;
     display: flex;
     padding: 0;
     flex-direction: column;
-    height: 450px;
     width: 334px;
     flex-wrap: wrap;
   }
 
   .about-us__item {
     font-size: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 65px;
   }
 
   .about-us__item--flower {
@@ -218,10 +221,22 @@
     font-size: 53px;
   }
 
+  .about-us__list {
+    width: 700px;
+    height: auto;
+    flex-direction: inherit;
+    align-items: flex-start;
+  }
+
   .about-us__item {
     line-height: 1.1;
     width: 350px;
+    min-height: 65px;
     box-sizing: border-box;
+
+    &::before {
+      top: -55px;
+    }
   }
 
   .about-us__item--flower {

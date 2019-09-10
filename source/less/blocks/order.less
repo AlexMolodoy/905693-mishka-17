@@ -74,13 +74,14 @@
   }
 }
 
+input:focus + svg{
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 .order__text:hover::before,
 .order__text:focus::before {
   border: solid 2px #62d1ba;
-}
-
-.order__text:active::before {
-  opacity: 0.3;
 }
 
 .order-form__round:checked + .order__text--radio-round {
