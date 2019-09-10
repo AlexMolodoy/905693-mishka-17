@@ -6,9 +6,7 @@
 
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <link rel="preload" href="/fonts/opensans.woff" as="font">
     <link rel="preload" href="/fonts/opensans.woff2" as="font">
-    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
     <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
   </head>
   <body>
@@ -88,8 +86,11 @@
           </div>
           <div class="product__container-img">
               <picture>
-                  <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x"  media="(min-width: 1150px)">
-                  <source srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x"  media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                  <source type="image/webp" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                  <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                  <source srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
                   <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="product__container-set" width="260" height="315" alt="triple-set">
               </picture>
           </div>
@@ -134,6 +135,9 @@
       <section class="reviews">
         <h2 class="reviews__head">Отзывы</h2>
         <picture>
+          <source type="image/webp" srcset="img/review@1x.jpg 1x, img/review@2x.jpg 2x" media="(min-width: 1150px)">
+          <source type="image/webp" srcset="img/review@1x.jpg 1x, img/review@2x.jpg 2x" media="(min-width: 768px)">
+          <source type="image/webp" srcset="img/review@1x.jpg 1x, img/review@2x.jpg 2x" media="(min-width: 320px)">
           <source srcset="img/review@1x.jpg 1x, img/review@2x.jpg 2x" media="(min-width: 1150px)">
           <source srcset="img/review@1x.jpg 1x, img/review@2x.jpg 2x" media="(min-width: 768px)">
           <img src="img/review@1x.jpg" class="reviews__photo" width="149" height="72" alt="reviews-background">
@@ -175,6 +179,9 @@
         </div>
         <div class="contacts__map">
             <picture>
+                <source type="image/webp" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+                <source type="image/webp" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" media="(min-width: 320px)">
                 <source srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1150px)">
                 <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
                 <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" class="contacts__map-adaptive" height="457" width="322" alt="map-spb">

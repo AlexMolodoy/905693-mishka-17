@@ -131,9 +131,9 @@
     height: auto;
     display: flex;
     padding: 0;
-    flex-direction: column;
-    width: 334px;
     flex-wrap: wrap;
+    width: 668px;
+    flex-direction: initial;
   }
 
   .about-us__item {
@@ -141,6 +141,11 @@
     width: 50%;
     box-sizing: border-box;
     min-height: 65px;
+    margin-top: 90px;
+
+    &::before {
+      top: -50px;
+    }
   }
 
   .about-us__item--flower {
@@ -156,7 +161,7 @@
 
   .about-us__item--money {
     padding-right: 80px;
-    margin-top: 109px;
+    // margin-top: 109px;
     padding-left: 5px;
 
     &::before {
@@ -167,7 +172,7 @@
 
   .about-us__item--heart {
     padding-right: 90px;
-    margin-top: 109px;
+    // margin-top: 109px;
     padding-left: 5px;
 
     &::before {
@@ -189,7 +194,7 @@
 
   .about-us__item--rocket {
     padding-right: 0;
-    margin-top: 109px;
+    // margin-top: 109px;
     padding-left: 5px;
 
     &::before {
@@ -200,7 +205,7 @@
 
   .about-us__item--gift {
     padding-right: 60px;
-    margin-top: 109px;
+    // margin-top: 109px;
     padding-left: 5px;
 
     &::before {
@@ -222,10 +227,11 @@
   }
 
   .about-us__list {
-    width: 700px;
     height: auto;
-    flex-direction: inherit;
     align-items: flex-start;
+    width: 700px;
+    flex-direction: initial;
+    height: auto;
   }
 
   .about-us__item {
@@ -233,6 +239,7 @@
     width: 350px;
     min-height: 65px;
     box-sizing: border-box;
+    margin-top: 90px;
 
     &::before {
       top: -55px;
@@ -241,12 +248,12 @@
 
   .about-us__item--flower {
     padding-right: 120px;
-    margin-top: 89px;
+    // margin-top: 89px;
   }
 
   .about-us__item--money {
     padding-right: 90px;
-    margin-top: 110px;
+    // margin-top: 110px;
 
     &::before {
       bottom: 64px;
@@ -255,15 +262,11 @@
 
   .about-us__item--heart {
     padding-right: 110px;
-    margin-top: 112px;
-  }
-
-  .about-us__item--ball {
-    margin-top: 89px;
+    // margin-top: 112px;
   }
 
   .about-us__item--rocket {
-    margin-top: 110px;
+    // margin-top: 110px;
 
     &::before {
       bottom: 64px;
@@ -271,18 +274,10 @@
   }
 
   .about-us__item--gift {
-    margin-top: 111px;
+    // margin-top: 111px;
 
     &::before {
       left: 8px;
     }
-  }
-
-  .about-us__list {
-    display: flex;
-    padding: 0;
-    flex-direction: column;
-    height: 450px;
-    width: 350px;
   }
 }
