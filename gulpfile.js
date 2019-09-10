@@ -63,7 +63,7 @@ gulp.task("sprite", function () {
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("source/img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("server", function () {
@@ -98,9 +98,9 @@ gulp.task("build", gulp.series (
   "clean",
   "copy",
   "css",
+  "sprite",
   "html",
-  "webp",
-  "sprite"
+  "webp"
 ));
 
 
